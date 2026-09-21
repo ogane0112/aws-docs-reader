@@ -1,0 +1,20 @@
+# 対象ガイドの一覧。baseUrl は末尾にスラッシュを付けること
+# (toc-contents.json / sitemap.xml をこの直下から解決するため)。
+guides:
+  - id: ecs-dev
+    service: "Amazon ECS"
+    title: "開発者ガイド"
+    baseUrl: "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/"
+    priority: 1
+
+  - id: dynamodb-dev
+    service: "Amazon DynamoDB"
+    title: "開発者ガイド"
+    baseUrl: "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/"
+    priority: 2
+
+  - id: aurora-ug
+    service: "Amazon Aurora"
+    title: "ユーザーガイド"
+    baseUrl: "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/"
+    priority: 3

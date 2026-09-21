@@ -1,0 +1,35 @@
+name: Generate TOC
+
+on:
+  schedule:
+    # 毎週月曜 09:00 JST (00:00 UTC)
+    - cron: "0 0 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.24"
+
+      - name: Run gentoc
+        run: go run ./cmd/gentoc -config guides.config.yaml -out public/data
+
+      - name: Commit changes if any
+        run: |
+          if git diff --quiet -- public/data; then
+            echo "No changes to public/data"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/data
+          git commit -m "chore: regenerate TOC data"
+          git push
