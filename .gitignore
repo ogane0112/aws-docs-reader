@@ -1,2 +1,7 @@
 /gentoc
 .DS_Store
+
+# frontend
+node_modules/
+dist/
+*.tsbuildinfo
