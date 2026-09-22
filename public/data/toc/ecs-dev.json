@@ -1,0 +1,3004 @@
+{
+  "guideId": "ecs-dev",
+  "nodes": [
+    {
+      "title": "What is Amazon ECS?",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html",
+      "children": null
+    },
+    {
+      "title": "Getting started",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started.html",
+      "children": [
+        {
+          "title": "Set up",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/get-set-up-for-amazon-ecs.html",
+          "children": null
+        },
+        {
+          "title": "Creating a container image",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-container-image.html",
+          "children": null
+        },
+        {
+          "title": "Learn how to create a task for Amazon ECS Managed Instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started-managed-instances.html",
+          "children": null
+        },
+        {
+          "title": "Learn how to create a task for Amazon ECS Managed Instances with the AWS CLI",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started-managed-instances-cli.html",
+          "children": null
+        },
+        {
+          "title": "Learn how to create a Linux task for Fargate",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started-fargate.html",
+          "children": null
+        },
+        {
+          "title": "Learn how to create a Windows task for Fargate",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Windows_fargate-getting_started.html",
+          "children": null
+        },
+        {
+          "title": "Learn how to create a Windows task for EC2",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started-ecs-ec2-v2.html",
+          "children": null
+        },
+        {
+          "title": "Using the AWS CDK",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tutorial-ecs-web-server-cdk.html",
+          "children": null
+        },
+        {
+          "title": "Creating resources using the AWS Copilot CLI",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Copilot.html",
+          "children": [
+            {
+              "title": "Installing the AWS Copilot CLI",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/copilot-install.html",
+              "children": null
+            },
+            {
+              "title": "Deploying a sample Amazon ECS application using the AWS Copilot CLI",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/copilot-deploy.html",
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Amazon ECS with CloudFormation",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-with-cloudformation.html",
+      "children": [
+        {
+          "title": "Creating Amazon ECS resources using the CloudFormation console",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-cloudformation-console.html",
+          "children": null
+        },
+        {
+          "title": "Creating Amazon ECS resources using AWS CLI commands for CloudFormation",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-cloudformation-cli.html",
+          "children": null
+        },
+        {
+          "title": "Example CloudFormation templates",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/working-with-templates.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Best practices",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-best-practices.html",
+      "children": null
+    },
+    {
+      "title": "Architect your solution for Amazon ECS",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-configuration.html",
+      "children": [
+        {
+          "title": "Launch types and capacity providers",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/capacity-launch-type-comparison.html",
+          "children": null
+        },
+        {
+          "title": "Using dual-stack endpoints",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/dual-stack-endpoint.html",
+          "children": null
+        },
+        {
+          "title": "Applications in shared subnets, Local Zones, and Wavelength Zones",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-regions-zones.html",
+          "children": null
+        },
+        {
+          "title": "Amazon Elastic Container Service on AWS Outposts",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using-outposts.html",
+          "children": null
+        },
+        {
+          "title": "Best practices for container images",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-considerations.html",
+          "children": null
+        },
+        {
+          "title": "Networking best practices",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/networking-best-practices.html",
+          "children": [
+            {
+              "title": "Connect applications to the internet",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/networking-outbound.html",
+              "children": null
+            },
+            {
+              "title": "Best practices for receiving inbound connections to Amazon ECS",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/networking-inbound.html",
+              "children": null
+            },
+            {
+              "title": "Best practices for connecting to AWS services",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/networking-connecting-vpc.html",
+              "children": null
+            },
+            {
+              "title": "Best practices for connecting services",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/networking-connecting-services.html",
+              "children": null
+            },
+            {
+              "title": "Best practices for networking services across AWS accounts and VPCs",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/networking-connecting-services-crossaccount.html",
+              "children": null
+            },
+            {
+              "title": "AWS services for networking troubleshooting",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/networking-troubleshooting.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Optimize task launch time",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-recommendations.html",
+          "children": null
+        },
+        {
+          "title": "Operating at scale",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/operating-at-scale-best-practice.html",
+          "children": [
+            {
+              "title": "Amazon ECS service quotas and API throttling limits",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/operating-at-scale-service-quotas-best-practice.html",
+              "children": null
+            },
+            {
+              "title": "Handle throttling issues",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/operating-at-scale-dealing-with-throttles.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Auto scaling and capacity management best practices",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/capacity-availability.html",
+          "children": [
+            {
+              "title": "Determining the task size",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/capacity-tasksize-best-practice.html",
+              "children": null
+            },
+            {
+              "title": "Optimizing service auto scaling",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/capacity-autoscaling-best-practice.html",
+              "children": null
+            },
+            {
+              "title": "Capacity and availability",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/capacity-availability-best-practice.html",
+              "children": null
+            },
+            {
+              "title": "Cluster capacity",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/capacity-cluster-best-practice.html",
+              "children": null
+            },
+            {
+              "title": "Choosing Fargate task sizes",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-task-size-best-practice.html",
+              "children": null
+            },
+            {
+              "title": "Speeding up cluster auto scaling",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/capacity-cluster-speed-up-ec2-best-practice.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Access features with account settings",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-account-settings.html",
+          "children": [
+            {
+              "title": "Viewing account settings using the console",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-viewing-longer-id-settings.html",
+              "children": null
+            },
+            {
+              "title": "Modifying account settings",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-modifying-longer-id-settings.html",
+              "children": null
+            },
+            {
+              "title": "Reverting to the default account settings",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-reverting-account.html",
+              "children": null
+            },
+            {
+              "title": "Managing account settings using the AWS CLI",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/account-setting-management-cli.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "IAM roles for Amazon ECS",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-iam-role-overview.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Amazon ECS Managed Instances",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ManagedInstances.html",
+      "children": [
+        {
+          "title": "Amazon ECS Managed Instances instance types",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-instance-types.html",
+          "children": null
+        },
+        {
+          "title": "Instance selection best practices for Amazon ECS Managed Instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-instance-selection-best-practices.html",
+          "children": null
+        },
+        {
+          "title": "Amazon ECS Managed Instances pull behavior",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instance-pull-behavior.html",
+          "children": null
+        },
+        {
+          "title": "Patching in Amazon ECS Managed Instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-patching.html",
+          "children": null
+        },
+        {
+          "title": "Security considerations for Amazon ECS Managed Instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-security.html",
+          "children": null
+        },
+        {
+          "title": "Enabling VPC Encryption control for Amazon ECS Managed Instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-vpc-encryption.html",
+          "children": null
+        },
+        {
+          "title": "Infrastructure optimization",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-infrastructure-optimization.html",
+          "children": null
+        },
+        {
+          "title": "GPU auto repair",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-gpu-auto-repair.html",
+          "children": null
+        },
+        {
+          "title": "Migrate from Fargate to Amazon ECS Managed Instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/migrate-fargate-to-managed-instances.html",
+          "children": null
+        },
+        {
+          "title": "Migrate from EC2 to Amazon ECS Managed Instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/migrate-ec2-to-managed-instances.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Amazon ECS Managed Daemons",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-daemons.html",
+      "children": [
+        {
+          "title": "Daemon task definitions",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-daemons-task-definitions.html",
+          "children": null
+        },
+        {
+          "title": "Creating and managing daemons",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-daemons-create-manage.html",
+          "children": null
+        },
+        {
+          "title": "Daemon deployments",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-daemons-deployments.html",
+          "children": null
+        },
+        {
+          "title": "Daemon events",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-daemons-events.html",
+          "children": null
+        },
+        {
+          "title": "Daemon metrics",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-daemons-metrics.html",
+          "children": null
+        },
+        {
+          "title": "Daemon auto repair",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-daemons-auto-repair.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "AWS Fargate",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html",
+      "children": [
+        {
+          "title": "Security considerations for when to use Fargate",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-fargate-ec2.html",
+          "children": null
+        },
+        {
+          "title": "Fargate security best practices",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-fargate.html",
+          "children": [
+            {
+              "title": "Fargate security considerations",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-security-considerations.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Fargate platform versions",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform-fargate.html",
+          "children": [
+            {
+              "title": "Migrating to Linux platform version 1.4.0",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform-version-migration.html",
+              "children": null
+            },
+            {
+              "title": "Linux Platform version change log",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform-versions-changelog.html",
+              "children": null
+            },
+            {
+              "title": "Linux platform version deprecation",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform-versions-retired.html",
+              "children": null
+            },
+            {
+              "title": "Windows platform version change log",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform-windows-fargate.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Windows containers on Fargate considerations for Amazon ECS",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/windows-considerations.html",
+          "children": null
+        },
+        {
+          "title": "Linux containers on Fargate container image pull behavior",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-pull-behavior.html",
+          "children": null
+        },
+        {
+          "title": "Windows containers on Fargate container image pull behavior",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-windows-behavior.html",
+          "children": null
+        },
+        {
+          "title": "Fargate task ephemeral storage",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-task-storage.html",
+          "children": [
+            {
+              "title": "Customer managed keys for AWS Fargate ephemeral storage",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-storage-encryption.html",
+              "children": [
+                {
+                  "title": "Create an encryption key for Fargate ephemeral storage",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-create-storage-key.html",
+                  "children": null
+                },
+                {
+                  "title": "Managing AWS KMS keys for Fargate ephemeral storage",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-managing-kms-key.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Task retirement and maintenance",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-maintenance.html",
+          "children": [
+            {
+              "title": "Prepare for AWS Fargate task retirement on Amazon ECS",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/prepare-task-retirement.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "AWS Fargate Regions",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate-Regions.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "EC2",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch-type-ec2.html",
+      "children": [
+        {
+          "title": "Container image pull behavior for EC2 and external instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/pull-behavior.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Amazon ECS Anywhere",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch-type-external.html",
+      "children": null
+    },
+    {
+      "title": "Amazon ECS Express Mode",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-overview.html",
+      "children": [
+        {
+          "title": "Creating an Express Mode service",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-create-full.html",
+          "children": null
+        },
+        {
+          "title": "Create your first Express Mode service in the console",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-first-run.html",
+          "children": null
+        },
+        {
+          "title": "Create your first Express Mode service using the AWS CLI",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-getting-started.html",
+          "children": null
+        },
+        {
+          "title": "Resources created by Express Mode services",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-work.html",
+          "children": null
+        },
+        {
+          "title": "Viewing the details of an Express Mode service",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-view-service.html",
+          "children": null
+        },
+        {
+          "title": "Updating an Amazon ECS Express Mode service",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-update-full.html",
+          "children": null
+        },
+        {
+          "title": "Delete Express Mode services",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-delete-task.html",
+          "children": null
+        },
+        {
+          "title": "Best practices for Amazon ECS Express Mode services",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-best-practices.html",
+          "children": null
+        },
+        {
+          "title": "Troubleshooting",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-troubleshooting.html",
+          "children": null
+        },
+        {
+          "title": "Updating Resources Outside of Express Mode",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-service-advanced-customization.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Task definitions",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html",
+      "children": [
+        {
+          "title": "Task definition states",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-definition-state.html",
+          "children": null
+        },
+        {
+          "title": "Architect your application",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/application_architecture.html",
+          "children": [
+            {
+              "title": "Best practices for task sizes",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/capacity-tasksize.html",
+              "children": null
+            },
+            {
+              "title": "Task networking for Amazon ECS Managed Instances",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instance-networking.html",
+              "children": [
+                {
+                  "title": "AWSVPC network mode",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-awsvpc-mode.html",
+                  "children": null
+                },
+                {
+                  "title": "Host network mode",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-host-modes.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Task networking for EC2",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking.html",
+              "children": [
+                {
+                  "title": "AWSVPC network mode",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-networking-awsvpc.html",
+                  "children": null
+                },
+                {
+                  "title": "Host network mode",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/networking-networkmode-host.html",
+                  "children": null
+                },
+                {
+                  "title": "Bridge network mode",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/networking-networkmode-bridge.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Task networking for Fargate",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-task-networking.html",
+              "children": null
+            },
+            {
+              "title": "Storage options for tasks",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_data_volumes.html",
+              "children": [
+                {
+                  "title": "Amazon EBS",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-volumes.html",
+                  "children": [
+                    {
+                      "title": "Non-root user behavior",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-non-root-behavior.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Defer volume configuration to launch time in a task definition",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specify-ebs-config.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Encrypt data stored in Amazon EBS volumes",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-kms-encryption.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Specify Amazon EBS volume configuration at deployment",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/configure-ebs-volume.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Performance of Amazon EBS volumes for Fargate on-demand tasks",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-fargate-performance-limits.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Performance of Amazon EBS volumes for EC2 tasks",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-fargate-performance-limits-ec2.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Performance of Amazon EBS volumes for Amazon ECS Managed Instances tasks",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ebs-managed-instances-performance.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Troubleshooting Amazon EBS volume attachment",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubleshoot-ebs-volumes.html",
+                      "children": [
+                        {
+                          "title": "Container can't write to Amazon EBS volume",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubleshoot-non-root-container.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Status reasons for Amazon EBS volume attachment",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubleshoot-ebs-volumes-scenarios.html",
+                          "children": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "Amazon EFS",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/efs-volumes.html",
+                  "children": [
+                    {
+                      "title": "Best practices for using Amazon EFS",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/efs-best-practices.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Specify an Amazon EFS file system in a task definition",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specify-efs-config.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Configuring Amazon EFS file systems",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tutorial-efs-volumes.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "FSx for Windows File Server",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/wfsx-volumes.html",
+                  "children": [
+                    {
+                      "title": "Best practices for using FSx for Windows File Server",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/wfsx-best-practices.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Specify an FSx for Windows File Server file system in a task definition",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specify-wfsx-config.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Learn how to configure FSx for Windows File Server file systems",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tutorial-wfsx-volumes.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Amazon S3 Files",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/s3files-volumes.html",
+                  "children": [
+                    {
+                      "title": "Specify an S3 Files volume in a task definition",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specify-s3files-config.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Docker volumes",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-volumes.html",
+                  "children": [
+                    {
+                      "title": "Specify a Docker volume in a task definition",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specify-volume-config.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Docker volume examples",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-volume-examples.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Bind mounts",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/bind-mounts.html",
+                  "children": [
+                    {
+                      "title": "Specify a bind mount in a task definition",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specify-bind-mount-config.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Bind mount examples for Amazon ECS",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/bind-mount-examples.html",
+                      "children": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Managing container swap memory space",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-swap.html",
+              "children": null
+            },
+            {
+              "title": "Task definition differences for Amazon ECS Managed Instances",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-tasks-services.html",
+              "children": null
+            },
+            {
+              "title": "Task definition differences for Fargate",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-tasks-services.html",
+              "children": null
+            },
+            {
+              "title": "Task definition differences for EC2 instances running Windows",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/windows_task_definitions.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Creating a task definition using the console",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-task-definition.html",
+          "children": null
+        },
+        {
+          "title": "Using Amazon Q Developer to provide task definition recommendations in the Amazon ECS console",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using-amazon-q.html",
+          "children": null
+        },
+        {
+          "title": "Updating a task definition using the console",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-task-definition-console-v2.html",
+          "children": null
+        },
+        {
+          "title": "Deregistering a task definition revision using the console",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deregister-task-definition-v2.html",
+          "children": null
+        },
+        {
+          "title": "Deleting a task definition revision using the console",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/delete-task-definition-v2.html",
+          "children": null
+        },
+        {
+          "title": "Task definition use cases",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/use-cases.html",
+          "children": [
+            {
+              "title": "Task definitions for GPU workloads",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu.html",
+              "children": [
+                {
+                  "title": "Use GPUs with Amazon ECS Managed Instances",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-gpu.html",
+                  "children": null
+                },
+                {
+                  "title": "Launch a GPU container instance for Amazon ECS on Amazon EC2",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/gpu-launch.html",
+                  "children": null
+                },
+                {
+                  "title": "Specifying GPUs in a task definition",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu-specifying.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Task definitions for video trancoding workloads",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-vt1.html",
+              "children": [
+                {
+                  "title": "Specifying video transcoding in a task definition",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-def-video-transcode.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Task definitions for AWS Neuron machine learning workloads",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-inference.html",
+              "children": [
+                {
+                  "title": "Example Neuron task definitions",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-inference-task-def.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Task definitions for deep learning instances",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-dl1.html",
+              "children": [
+                {
+                  "title": "Specifying deep learning in a task definition",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-dl1-requirements.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Task definitions for 64-bit ARM workloads",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-arm64.html",
+              "children": [
+                {
+                  "title": "Specifying the ARM architecture in a task definition",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-arm-specifying.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Send logs to CloudWatch",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_awslogs.html",
+              "children": [
+                {
+                  "title": "Example task definition: Route logs to CloudWatch",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specify-log-config.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Send logs to an AWS service or AWS Partner",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using_firelens.html",
+              "children": [
+                {
+                  "title": "Configuring logs for high throughput",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/firelens-docker-buffer-limit.html",
+                  "children": null
+                },
+                {
+                  "title": "AWS for Fluent Bit image repositories",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/firelens-using-fluentbit.html",
+                  "children": null
+                },
+                {
+                  "title": "Example task definition: Route logs to FireLens",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/firelens-taskdef.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Using non-AWS container images",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/private-auth.html",
+              "children": null
+            },
+            {
+              "title": "Restart individual containers in tasks",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-restart-policy.html",
+              "children": [
+                {
+                  "title": "Specifying a container restart policy in a task definition",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-restart-policy-example.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Pass sensitive data to a container",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data.html",
+              "children": [
+                {
+                  "title": "Pass an individual environment variable to a container",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/taskdef-envfiles.html",
+                  "children": null
+                },
+                {
+                  "title": "Pass environment variables to a container",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/use-environment-file.html",
+                  "children": null
+                },
+                {
+                  "title": "Pass Secrets Manager secrets programmatically",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/secrets-app-secrets-manager.html",
+                  "children": null
+                },
+                {
+                  "title": "Pass Systems Manager Parameter Store secrets programmatically",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/secrets-app-ssm-paramstore.html",
+                  "children": null
+                },
+                {
+                  "title": "Pass Secrets Manager secrets through environment variables",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/secrets-envvar-secrets-manager.html",
+                  "children": null
+                },
+                {
+                  "title": "Pass Systems Manager parameters through environment variables",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/secrets-envvar-ssm-paramstore.html",
+                  "children": null
+                },
+                {
+                  "title": "Pass secrets for logging configuration",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/secrets-logconfig.html",
+                  "children": null
+                },
+                {
+                  "title": "Specifying sensitive data using Secrets Manager secrets",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/specifying-sensitive-data-tutorial.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Task definition parameters for Amazon ECS Managed Instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters-managed-instances.html",
+          "children": null
+        },
+        {
+          "title": "Task definition parameters for Fargate",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html",
+          "children": null
+        },
+        {
+          "title": "Task definition parameters for EC2",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters_ec2.html",
+          "children": null
+        },
+        {
+          "title": "Task definition template",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-definition-template.html",
+          "children": null
+        },
+        {
+          "title": "Example task definitions",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/example_task_definitions.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Clusters",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/clusters.html",
+      "children": [
+        {
+          "title": "Clusters for Amazon ECS Managed Instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instance-clusters.html",
+          "children": [
+            {
+              "title": "Creating a cluster for Amazon ECS Managed Instances",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-cluster-managed-instances.html",
+              "children": null
+            },
+            {
+              "title": "Updating a cluster to use Amazon ECS Managed Instances",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-cluster-managed-instances.html",
+              "children": null
+            },
+            {
+              "title": "Managed Instances capacity providers",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-capacity-providers-concept.html",
+              "children": [
+                {
+                  "title": "Best practices for updating capacity providers",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/capacity-provider-managed-instances-best-practices.html",
+                  "children": null
+                },
+                {
+                  "title": "Creating a capacity provider for Amazon ECS Managed Instances",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-capacity-provider-managed-instances.html",
+                  "children": null
+                },
+                {
+                  "title": "Updating Amazon ECS Managed Instances monitoring",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-capacity-provider-managed-instances.html",
+                  "children": null
+                },
+                {
+                  "title": "Deleting a capacity provider",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/delete-capacity-provider-managed-instances-console-v2.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Task scale-in protection",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instance-task-scale-in-protect.html",
+              "children": [
+                {
+                  "title": "Task scale-in protection endpoint",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instance-task-scale-in-protection-endpoint.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Clusters for Fargate",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-capacity-providers.html",
+          "children": [
+            {
+              "title": "Creating a cluster for Fargate workloads",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-cluster-console-v2.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Amazon ECS capacity providers for EC2 workloads",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/asg-capacity-providers.html",
+          "children": [
+            {
+              "title": "EC2 container instance security",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ec2-security-considerations.html",
+              "children": null
+            },
+            {
+              "title": "Creating a cluster for Amazon EC2 workloads",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-ec2-cluster-console-v2.html",
+              "children": null
+            },
+            {
+              "title": "Cluster auto scaling",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-auto-scaling.html",
+              "children": [
+                {
+                  "title": "Optimize cluster auto scaling",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/capacity-cluster-speed-up-ec2.html",
+                  "children": null
+                },
+                {
+                  "title": "Managed scaling behavior",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-scaling-behavior.html",
+                  "children": null
+                },
+                {
+                  "title": "Control the instances Amazon ECS terminates",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-termination-protection.html",
+                  "children": [
+                    {
+                      "title": "Updating managed termination protection for Amazon ECS capacity providers",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-managed-termination-protection.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Turning on cluster auto scaling",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/turn-on-cluster-auto-scaling.html",
+                  "children": null
+                },
+                {
+                  "title": "Turning off cluster auto scaling",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/turn-off-cluster-auto-scaling.html",
+                  "children": null
+                },
+                {
+                  "title": "Creating a capacity provider",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-capacity-provider-console-v2.html",
+                  "children": null
+                },
+                {
+                  "title": "Updating a capacity provider",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-capacity-provider-console-v2.html",
+                  "children": null
+                },
+                {
+                  "title": "Deleting a capacity provider",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/delete-capacity-provider-console-v2.html",
+                  "children": null
+                },
+                {
+                  "title": "Safely stop workloads",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instance-draining.html",
+                  "children": [
+                    {
+                      "title": "Configuring Amazon ECS capacity providers to safely shut down instances",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/enable-managed-instance-draining.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Creating resources for cluster auto scaling",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tutorial-cluster-auto-scaling-console.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Amazon EC2 container instances",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-capacity.html",
+              "children": [
+                {
+                  "title": "Amazon ECS-optimized Linux AMIs",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html",
+                  "children": [
+                    {
+                      "title": "Retrieving Amazon ECS-optimized Linux AMI metadata",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/retrieve-ecs-optimized_AMI.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Migrating from an Amazon Linux 2 to an Amazon Linux 2023 Amazon ECS-optimized AMI",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/al2-to-al2023-ami-transition.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Amazon ECS-optimized Linux AMI build script",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-ami-build-scripts.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Amazon ECS-optimized Bottlerocket AMIs",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-bottlerocket.html",
+                  "children": [
+                    {
+                      "title": "Retrieving Amazon ECS-optimized Bottlerocket AMI metadata",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-bottlerocket-retrieve-ami.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Launching a Bottlerocket instance",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/bottlerocket-launch.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Linux container instance management",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/manage-linux.html",
+                  "children": [
+                    {
+                      "title": "Launching a container instance",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_container_instance.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Bootstrapping Linux container instances",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/bootstrap_container_instance.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Configuring container instances to receive Spot Instance notices",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/spot-instance-draining-linux-container.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Running a script when you launch a container instance",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/start_task_at_launch.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Increasing Amazon ECS Linux container instance network interfaces",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-instance-eni.html",
+                      "children": [
+                        {
+                          "title": "Supported EC2 instances",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/eni-trunking-supported-instance-types.html",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Reserving container instance memory",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/memory-management.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Manage container instances remotely",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ec2-run-command.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Using an HTTP proxy for Linux container instances",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/http_proxy_config.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Configuring pre-initialized instances for your Auto Scaling group",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using-warm-pool.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Updating the Amazon ECS container agent",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agent-update.html",
+                      "children": [
+                        {
+                          "title": "Updating the Amazon ECS container agent on an Amazon ECS-optimized AMI",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/agent-update-ecs-ami.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Manually updating the Amazon ECS container agent (for non-Amazon ECS-Optimized AMIs)",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/manually_update_agent.html",
+                          "children": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "Amazon ECS-optimized Windows AMIs",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_windows_AMI.html",
+                  "children": [
+                    {
+                      "title": "Retrieving Amazon ECS-optimized Windows AMI metadata",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/retrieve-ecs-optimized_windows_AMI.html",
+                      "children": null
+                    },
+                    {
+                      "title": "AMI versions",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-windows-ami-versions.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Building your own AMI",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/windows-custom-ami.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Windows container instance management",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/manage-windows.html",
+                  "children": [
+                    {
+                      "title": "Launching a container instance",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/launch_window-container_instance.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Bootstrapping container instances",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/bootstrap_windows_container_instance.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Using an HTTP proxy for Windows container instances",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/http_proxy_config-windows.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Configuring container instances to receive Spot Instance notices",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/windows-spot-instance-draining-container.html",
+                      "children": null
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Clusters for external instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-anywhere.html",
+          "children": [
+            {
+              "title": "Creating a cluster for External instance workloads",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-cluster-console-v2-ecs-anywhere.html",
+              "children": null
+            },
+            {
+              "title": "Registering an external instance to an Amazon ECS cluster",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-anywhere-registration.html",
+              "children": null
+            },
+            {
+              "title": "Deregistering an external instance",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-anywhere-deregistration.html",
+              "children": null
+            },
+            {
+              "title": "Updating the AWS Systems Manager agent and Amazon ECS container agent",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-anywhere-updates.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Updating a cluster",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-cluster-v2.html",
+          "children": null
+        },
+        {
+          "title": "Deleting a cluster",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/delete_cluster-new-console.html",
+          "children": null
+        },
+        {
+          "title": "Deregistering a container instance",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deregister_container_instance.html",
+          "children": null
+        },
+        {
+          "title": "Container instance draining",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-instance-draining.html",
+          "children": null
+        },
+        {
+          "title": "Changing the instance type or size outside of the Auto Scaling group",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-instance-change-type.html",
+          "children": null
+        },
+        {
+          "title": "Amazon EC2 Container Instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agent-versions.html",
+          "children": [
+            {
+              "title": "Container agent configuration",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agent-config.html",
+              "children": [
+                {
+                  "title": "Storing container instance configuration in Amazon S3",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-config-s3.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Installing the Amazon ECS container agent",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agent-install.html",
+              "children": null
+            },
+            {
+              "title": "Configuring container instances for private Docker images",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/private-auth-container-instances.html",
+              "children": null
+            },
+            {
+              "title": "Clean up tasks and images",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/automated_image_cleanup.html",
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Schedule your containers",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/scheduling_tasks.html",
+      "children": [
+        {
+          "title": "Task lifecycle",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-lifecycle-explanation.html",
+          "children": null
+        },
+        {
+          "title": "How Amazon ECS places tasks on container instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement.html",
+          "children": [
+            {
+              "title": "Amazon ECS Managed Instances auto scaling and task placement",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instance-auto-scaling.html",
+              "children": null
+            },
+            {
+              "title": "Use strategies to define task placement",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-strategies.html",
+              "children": [
+                {
+                  "title": "Example task placement strategies",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/strategy-examples.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Group related tasks",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-groups.html",
+              "children": null
+            },
+            {
+              "title": "Define which container instances are used for tasks",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-placement-constraints.html",
+              "children": [
+                {
+                  "title": "Create expressions to define container instances for tasks",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster-query-language.html",
+                  "children": null
+                },
+                {
+                  "title": "Example task placement constraints",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/constraint-examples.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Standalone tasks",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/standalone-tasks.html",
+          "children": [
+            {
+              "title": "Running an application as a task",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/standalone-task-create.html",
+              "children": null
+            },
+            {
+              "title": "Using Amazon EventBridge Scheduler to schedule tasks",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tasks-scheduled-eventbridge-scheduler.html",
+              "children": null
+            },
+            {
+              "title": "Stopping a task",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/standalone-task-stop.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Services",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_services.html",
+          "children": [
+            {
+              "title": "Service deployment controllers and strategies",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service-options.html",
+              "children": [
+                {
+                  "title": "Amazon ECS deployment failure detection",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-failure-detection.html",
+                  "children": [
+                    {
+                      "title": "How the deployment circuit breaker detects failures",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-circuit-breaker.html",
+                      "children": null
+                    },
+                    {
+                      "title": "How CloudWatch alarms detect deployment failures",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-alarm-failure.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Lifecycle hooks for Amazon ECS service deployments",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-lifecycle-hooks.html",
+                  "children": [
+                    {
+                      "title": "Lambda hooks for Amazon ECS service deployments",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/lambda-lifecycle-hooks.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Pause hooks for Amazon ECS service deployments",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/pause-lifecycle-hooks.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Continuing service deployments",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/continue-service-deployment.html",
+                  "children": null
+                },
+                {
+                  "title": "Stopping service deployments",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/stop-service-deployment.html",
+                  "children": null
+                },
+                {
+                  "title": "Rolling update deployments",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-ecs.html",
+                  "children": [
+                    {
+                      "title": "Service parameters best practices",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-options.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Creating a rolling update deployment",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-service-console-v2.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Early success criteria",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/early-success-criteria.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Blue/green deployments",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-blue-green.html",
+                  "children": [
+                    {
+                      "title": "Amazon ECS blue/green service deployments workflow",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/blue-green-deployment-how-it-works.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Required resources for Amazon ECS blue/green deployments",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/blue-green-deployment-implementation.html",
+                      "children": [
+                        {
+                          "title": "Application Load Balancer resources for blue/green, linear, and canary deployments",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/alb-resources-for-blue-green.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Network Load Balancer resources for blue/green, linear and canary deployments",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/nlb-resources-for-blue-green.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Service Connect resources for Amazon ECS blue/green, linear, and canary deployments",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-blue-green.html",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Creating a blue/green deployment",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deploy-blue-green-service.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Troubleshooting blue/green deployments",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubleshooting-blue-green.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Linear deployments",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-linear.html",
+                  "children": [
+                    {
+                      "title": "Required resources for Amazon ECS linear deployments",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/linear-deployment-implementation.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Creating a linear deployment",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deploy-linear-service.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Canary deployments",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/canary-deployment.html",
+                  "children": [
+                    {
+                      "title": "Required resources for Amazon ECS canary deployments",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/canary-deployment-implementation.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Creating a canary deployment",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deploy-canary-service.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "External deployments",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-external.html",
+                  "children": null
+                },
+                {
+                  "title": "CodeDeploy blue/green deployments",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deployment-type-bluegreen.html",
+                  "children": [
+                    {
+                      "title": "Migrate CodeDeploy blue/green deployments to Amazon ECS blue/green deployments",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/migrate-codedeploy-to-ecs-bluegreen.html",
+                      "children": [
+                        {
+                          "title": "Migrating from a CodeDeploy blue/green to an Amazon ECS blue/green service deployment",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/migrate-code-deploy-to-ecs-blue-green.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Migrating an CloudFormation CodeDeploy blue/green deployment template to an Amazon ECS blue/green CloudFormation template",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/migrate-codedeploy-to-ecs-bluegreen-cloudformation-template.html",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Migrating from a CodeDeploy blue/green to an Amazon ECS rolling update service deployment",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/migrate-code-deploy-to-ecs-rolling.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Update the Amazon ECS deployment strategy",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/migrate-deployment-strategies.html",
+                  "children": [
+                    {
+                      "title": "Updating the deployment strategy from rolling update to Amazon ECS blue/green",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-rolling-to-bluegreen.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Updating the deployment strategy from Amazon ECS blue/green to rolling update",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-bluegreen-to-rolling.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Troubleshooting Amazon ECS deployment strategy updates",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubleshooting-deployment-controller-migration.html",
+                      "children": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Service deployments",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-deployment.html",
+              "children": [
+                {
+                  "title": "Service deployment properties",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-deployment-property.html",
+                  "children": null
+                },
+                {
+                  "title": "Permissions required for viewing service deployments",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-deployment-permissions.html",
+                  "children": null
+                },
+                {
+                  "title": "Viewing service deployments",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/view-service-deployment.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Service revisions",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-revision.html",
+              "children": [
+                {
+                  "title": "Service revision properties",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-revision-property.html",
+                  "children": null
+                },
+                {
+                  "title": "Viewing service revision details",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/view-service-revision.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Availability Zone rebalancing",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-rebalancing.html",
+              "children": [
+                {
+                  "title": "Track Availability Zone rebalancing",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/track-service-rebalancing.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Use load balancing to distribute service traffic",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-load-balancing.html",
+              "children": [
+                {
+                  "title": "Optimize load balancer health check parameters",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/load-balancer-healthcheck.html",
+                  "children": null
+                },
+                {
+                  "title": "Optimize load balancer connection draining parameters",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/load-balancer-connection-draining.html",
+                  "children": null
+                },
+                {
+                  "title": "Use an Application Load Balancer for Amazon ECS",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/alb.html",
+                  "children": null
+                },
+                {
+                  "title": "Use a Network Load Balancer for Amazon ECS",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/nlb.html",
+                  "children": null
+                },
+                {
+                  "title": "Use a Gateway Load Balancer for Amazon ECS",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/glb.html",
+                  "children": null
+                },
+                {
+                  "title": "Registering multiple target groups with a service",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/register-multiple-targetgroups.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Service auto scaling",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-auto-scaling.html",
+              "children": [
+                {
+                  "title": "Target tracking",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-autoscaling-targettracking.html",
+                  "children": [
+                    {
+                      "title": "Create a target tracking scaling policy",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/target-tracking-create-policy.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Faster auto scaling with high-resolution metrics",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/target-tracking-faster-auto-scaling.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Step scaling",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-autoscaling-stepscaling.html",
+                  "children": [
+                    {
+                      "title": "Create a step scaling policy",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/step-scaling-create-policy.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Schedule scaling",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-autoscaling-schedulescaling.html",
+                  "children": [
+                    {
+                      "title": "Create a scheduled action",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/scheduled-action-create-policy.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Predictive scaling",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/predictive-auto-scaling.html",
+                  "children": [
+                    {
+                      "title": "Create a predictive scaling policy",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/predictive-scaling-create-policy.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Evaluate your predictive scaling policies",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/predictive-scaling-graphs.html",
+                      "children": [
+                        {
+                          "title": "Predictive auto scaling monitoring with CloudWatch",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/predictive-scaling-monitoring.html",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Override the forecast",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/predictive-scaling-overriding-forecast-capacity.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Use custom metrics",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/predictive-scaling-custom-metrics.html",
+                      "children": [
+                        {
+                          "title": "Constructing the JSON for predictive scaling custom metrics with Amazon ECS",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/predictive-scaling-custom-metrics-example.html",
+                          "children": [
+                            {
+                              "title": "Use metric math expressions",
+                              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/predictive-scaling-math-expression.html",
+                              "children": null
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "Queue-based scaling",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-autoscaling-queue.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Interconnect services",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/interconnecting-services.html",
+              "children": [
+                {
+                  "title": "Service Connect",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html",
+                  "children": [
+                    {
+                      "title": "Service Connect components",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-concepts-deploy.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Service Connect configuration overview",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-concepts.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Service Connect with shared namespaces",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-shared-namespaces.html",
+                      "children": [
+                        {
+                          "title": "Using shared AWS Cloud Map namespaces",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-shared-namespaces-setup.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Troubleshooting shared namespaces",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-shared-namespaces-troubleshooting.html",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Service Connect access logs",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-envoy-access-logs.html",
+                      "children": [
+                        {
+                          "title": "Enabling access logs",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-access-logs-configuration.html",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Service Connect zone-aware routing",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-zone-aware-routing.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Encrypt Service Connect traffic",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-tls.html",
+                      "children": [
+                        {
+                          "title": "Enabling TLS for Service Connect",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/enable-service-connect-tls.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Verifying TLS is enabled for Service Connect",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/verify-tls-enabled.html",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Configuring Service Connect with the AWS CLI",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-service-connect.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Service discovery",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-discovery.html",
+                  "children": [
+                    {
+                      "title": "Creating a service that uses Service Discovery",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-service-discovery.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Amazon VPC Lattice",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-vpc-lattice.html",
+                  "children": [
+                    {
+                      "title": "Create a service with Amazon VPC Lattice",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-vpc-lattice-create-service.html",
+                      "children": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Task scale-in protection",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-scale-in-protection.html",
+              "children": [
+                {
+                  "title": "Task scale-in protection endpoint",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-scale-in-protection-endpoint.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Fault injection with Amazon ECS and Fargate",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fault-injection.html",
+              "children": [
+                {
+                  "title": "Amazon ECS fault injection endpoints",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fault-injection-endpoints.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Update Amazon ECS service parameters",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-service-parameters.html",
+              "children": [
+                {
+                  "title": "Updating a service",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-service-console-v2.html",
+                  "children": null
+                },
+                {
+                  "title": "Updating a service to use a capacity provider",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-service-managed-instances.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Deleting a service",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/delete-service-v2.html",
+              "children": null
+            },
+            {
+              "title": "Migrate a service short ARN",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-arn-migration.html",
+              "children": null
+            },
+            {
+              "title": "Service throttle logic",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-throttle-logic.html",
+              "children": null
+            },
+            {
+              "title": "Service definition parameters",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service_definition_parameters.html",
+              "children": null
+            },
+            {
+              "title": "Service definition template",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/sd-template.html",
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tagging resources",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-using-tags.html",
+      "children": [
+        {
+          "title": "Adding tags to resources",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tag-resources-console.html",
+          "children": null
+        },
+        {
+          "title": "Tags for Amazon ECS Managed Instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/instance-details-tags-managed-instances.html",
+          "children": null
+        },
+        {
+          "title": "Adding tags to an EC2 container instance",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/instance-details-tags.html",
+          "children": null
+        },
+        {
+          "title": "Adding tags to an External container instance",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/instance-details-tags-external.html",
+          "children": null
+        },
+        {
+          "title": "Usage Reports",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/usage-reports.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Monitoring",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_monitoring.html",
+      "children": [
+        {
+          "title": "Best practices for monitoring Amazon ECS",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/monitoring-best-practices.html",
+          "children": null
+        },
+        {
+          "title": "Monitoring tools",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/monitoring-automated-manual.html",
+          "children": null
+        },
+        {
+          "title": "Monitor Amazon ECS using CloudWatch",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cloudwatch-metrics.html",
+          "children": [
+            {
+              "title": "Viewing Amazon ECS metrics",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/viewing_cloudwatch_metrics.html",
+              "children": null
+            },
+            {
+              "title": "Amazon ECS CloudWatch metrics",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/available-metrics.html",
+              "children": null
+            },
+            {
+              "title": "AWS Fargate usage metrics",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/monitoring-fargate-usage.html",
+              "children": null
+            },
+            {
+              "title": "Amazon ECS cluster reservation metrics",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster_reservation.html",
+              "children": null
+            },
+            {
+              "title": "Amazon ECS cluster utilization metrics",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cluster_utilization.html",
+              "children": null
+            },
+            {
+              "title": "Amazon ECS service utilization metrics",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service_utilization.html",
+              "children": [
+                {
+                  "title": "Service utilization metrics use cases",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service_utilization-metrics-explanation.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Automate responses to Amazon ECS errors using EventBridge",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cloudwatch_event_stream.html",
+          "children": [
+            {
+              "title": "Amazon ECS events",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_cwe_events.html",
+              "children": [
+                {
+                  "title": "Container instance state change events",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_container_instance_events.html",
+                  "children": null
+                },
+                {
+                  "title": "Task state change events",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_task_events.html",
+                  "children": null
+                },
+                {
+                  "title": "Service action events",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service_events.html",
+                  "children": null
+                },
+                {
+                  "title": "Service deployment state change events",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_service_deployment_events.html",
+                  "children": null
+                },
+                {
+                  "title": "Service deployment hook state change events",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_hook_state_change_events.html",
+                  "children": null
+                },
+                {
+                  "title": "Container instance health events",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_container_instance_health_events.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Handling events",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_cwet_handling.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Monitor Amazon ECS containers using Container Insights with enhanced observability",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cloudwatch-container-insights.html",
+          "children": [
+            {
+              "title": "Additional metrics for Amazon ECS Managed Instances",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/additional-metrics-managed-instances.html",
+              "children": [
+                {
+                  "title": "GPU application restart metrics",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/gpu-application-restart-metrics.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Monitoring Amazon ECS Managed Instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/monitoring-managed-instances.html",
+          "children": null
+        },
+        {
+          "title": "Determine task health using container health checks",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/healthcheck.html",
+          "children": [
+            {
+              "title": "View container health",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/view-container-health.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Monitor Amazon ECS container instance health",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-instance-health.html",
+          "children": null
+        },
+        {
+          "title": "Identify Amazon ECS optimization opportunities using application trace data",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/trace-data.html",
+          "children": [
+            {
+              "title": "Specifying the AWS Distro for OpenTelemetry sidecar for AWS X-Ray integration in your task definition",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/trace-data-containerdefinitions.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Correlate Amazon ECS application performance using application metrics",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/metrics-data.html",
+          "children": [
+            {
+              "title": "Exporting application metrics to Amazon CloudWatch",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/application-metrics-cloudwatch.html",
+              "children": null
+            },
+            {
+              "title": "Exporting application metrics to Amazon Managed Service for Prometheus",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/application-metrics-prometheus.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Log Amazon ECS API calls using AWS CloudTrail",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/logging-using-cloudtrail.html",
+          "children": null
+        },
+        {
+          "title": "Viewing CloudWatch Logs Live Tail for Amazon ECS services and tasks",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/monitoring-cloudwatchlogs-view.html",
+          "children": null
+        },
+        {
+          "title": "Monitor Amazon ECS operations with Action Logs",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/action-logs.html",
+          "children": [
+            {
+              "title": "Getting started with Amazon ECS Action Logs",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/action-logs-getting-started.html",
+              "children": null
+            },
+            {
+              "title": "Troubleshooting with Amazon ECS Action Logs",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/action-logs-troubleshooting.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Monitor workloads using metadata",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint.html",
+          "children": [
+            {
+              "title": "Environment variables",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-environment-variables.html",
+              "children": null
+            },
+            {
+              "title": "Container metadata file",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-metadata.html",
+              "children": [
+                {
+                  "title": "Turning on container metadata",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/enable-metadata.html",
+                  "children": null
+                },
+                {
+                  "title": "Container metadata file format",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/metadata-file-format.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Task metadata available for tasks on Amazon ECS Managed Instances",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-metadata.html",
+              "children": [
+                {
+                  "title": "Task metadata endpoint version 4 for tasks on Amazon ECS Managed Instances",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v4-managed-instances.html",
+                  "children": [
+                    {
+                      "title": "Task metadata v4 JSON response for tasks on Amazon ECS Managed Instances",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v4-managed-instances-response.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Task metadata v4 examples for tasks on Amazon ECS Managed Instances",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v4-managed-instances-examples.html",
+                      "children": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Task metadata available for Amazon ECS tasks on EC2",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ec2-metadata.html",
+              "children": [
+                {
+                  "title": "Task metadata endpoint version 4",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v4.html",
+                  "children": [
+                    {
+                      "title": "Task metadata V4 JSON response",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v4-response.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Task metadata v4 examples",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v4-examples.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Task metadata endpoint version 3",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v3.html",
+                  "children": [
+                    {
+                      "title": "Task metadata v3 JSON response",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v3-response.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Task metadata v3 examples",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v3-examples.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Task metadata endpoint version 2",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v2.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Task metadata available for tasks on Fargate",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-metadata.html",
+              "children": [
+                {
+                  "title": "Task metadata endpoint version 4 for tasks on Fargate",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v4-fargate.html",
+                  "children": [
+                    {
+                      "title": "Task metadata v4 JSON response for tasks on Fargate",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v4-fargate-response.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Task metadata v4 examples for tasks on Fargate",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v4-fargate-examples.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Fargate task metadata endpoint v3",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v3-fargate.html",
+                  "children": [
+                    {
+                      "title": "Task metadata v3 JSON response for tasks on Fargate",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-v3-fargate-response.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Task metadata v3 examples for tasks on Fargate",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-metadata-endpoint-fargate-example-task-metadata-response.html",
+                      "children": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Container introspection",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-agent-introspection.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Identify unauthorized behavior using Runtime Monitoring",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-duty-integration.html",
+          "children": [
+            {
+              "title": "Runtime Monitoring for Fargate workloads",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-configure-automatic.html",
+              "children": [
+                {
+                  "title": "Turning on Runtime Monitoring",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-duty-configure-automatic-guard-duty.html",
+                  "children": null
+                },
+                {
+                  "title": "Adding Runtime Monitoring to existing Fargate tasks",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-duty-configure-automatic-existing-tasks.html",
+                  "children": null
+                },
+                {
+                  "title": "Removing Runtime Monitoring from a cluster",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-duty-manage-subset-automatic.html",
+                  "children": null
+                },
+                {
+                  "title": "Removing Runtime Monitoring from an account",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-duty-manage-remove-automatic.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Runtime Monitoring for EC2 workloads",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-duty-configure-manual.html",
+              "children": [
+                {
+                  "title": "Turning on Runtime Monitoring",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-duty-configure-manual-guard-duty.html",
+                  "children": null
+                },
+                {
+                  "title": "Adding Runtime Monitoring to a cluster",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-duty-configure-manual-customize.html",
+                  "children": null
+                },
+                {
+                  "title": "Adding Runtime Monitoring to existing tasks",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-duty-configure-manual-existing-tasks.html",
+                  "children": null
+                },
+                {
+                  "title": "Removing Runtime Monitoring from a cluster",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-duty-remove-manual.html",
+                  "children": null
+                },
+                {
+                  "title": "Updating the GuardDuty security agent",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-duty-manage-update-agent.html",
+                  "children": null
+                },
+                {
+                  "title": "Removing Runtime Monitoring from an account",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-duty-manage-remove-protection-manual.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Troubleshooting Runtime Monitoring",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-guard-duty-troubleshooting.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Monitor Amazon ECS containers with ECS Exec",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-exec.html",
+          "children": [
+            {
+              "title": "Running commands using ECS Exec",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-exec-run.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Compute Optimizer recommendations",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-recommendations.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Amazon ECS MCP server",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-mcp-introduction.html",
+      "children": [
+        {
+          "title": "Getting started",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-mcp-getting-started.html",
+          "children": null
+        },
+        {
+          "title": "Tool configurations",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-mcp-tool-configurations.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubleshooting.html",
+      "children": [
+        {
+          "title": "Resolve stopped task errors",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/resolve-stopped-errors.html",
+          "children": [
+            {
+              "title": "Stopped task error messages updates",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/stopped-tasks-error-messages-updates.html",
+              "children": null
+            },
+            {
+              "title": "Viewing stopped task errors",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/stopped-task-errors.html",
+              "children": null
+            },
+            {
+              "title": "Stopped tasks error messages",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/stopped-task-error-codes.html",
+              "children": [
+                {
+                  "title": "TaskFailedToStart errors",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/failed-to-start-error.html",
+                  "children": null
+                },
+                {
+                  "title": "ResourceInitializationError errors",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/resource-initialization-error.html",
+                  "children": null
+                },
+                {
+                  "title": "ResourceNotFoundException errors",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/resource-not-found-error.html",
+                  "children": null
+                },
+                {
+                  "title": "SpotInterruption errors",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/spot-interruption-errors.html",
+                  "children": null
+                },
+                {
+                  "title": "InternalError errors",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/internal-error.html",
+                  "children": null
+                },
+                {
+                  "title": "OutOfMemoryError errors",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/out-of-memory.html",
+                  "children": null
+                },
+                {
+                  "title": "ContainerRuntimeError errors",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-runtime-error.html",
+                  "children": null
+                },
+                {
+                  "title": "ContainerRuntimeTimeoutError errors",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/container-runtime-timeout-error.html",
+                  "children": null
+                },
+                {
+                  "title": "CannotStartContainerError errors",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cannot-start-container.html",
+                  "children": null
+                },
+                {
+                  "title": "CannotStopContainerError errors",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cannot-stop-container.html",
+                  "children": null
+                },
+                {
+                  "title": "CannotInspectContainerError errors",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cannot-inspect-container.html",
+                  "children": null
+                },
+                {
+                  "title": "CannotCreateVolumeError errors",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cannot-create-volume.html",
+                  "children": null
+                },
+                {
+                  "title": "CannotPullContainer task errors",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_cannot_pull_image.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Verifying task connectivity",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/verify-connectivity.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Viewing IAM role requests",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_iam_roles-logs.html",
+          "children": null
+        },
+        {
+          "title": "Viewing service event messages",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-event-messages.html",
+          "children": [
+            {
+              "title": "Amazon ECS service event messages",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-event-messages-list.html",
+              "children": null
+            },
+            {
+              "title": "Amazon ECS service unhealthy event messages",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-unhealthy-event-messages.html",
+              "children": null
+            },
+            {
+              "title": "Amazon ECS Availability Zone service rebalancing service event messages",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-rebalancing-event-messages-list.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Troubleshooting service load balancers in Amazon ECS",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubleshoot-service-load-balancers.html",
+          "children": null
+        },
+        {
+          "title": "Troubleshooting service auto scaling in Amazon ECS",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubleshoot-service-auto-scaling.html",
+          "children": null
+        },
+        {
+          "title": "Event capture",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-lifecycle-events.html",
+          "children": [
+            {
+              "title": "Turn on event capture for an existing cluster",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/turn-on-event-capture-existing-cluster.html",
+              "children": null
+            },
+            {
+              "title": "Viewing service and task state change events",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/viewing-state-events.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Troubleshoot task definition invalid CPU or memory errors",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-cpu-memory-error.html",
+          "children": null
+        },
+        {
+          "title": "Viewing container agent logs",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/logs.html",
+          "children": null
+        },
+        {
+          "title": "Collecting container logs with Amazon ECS logs collector",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-logs-collector.html",
+          "children": null
+        },
+        {
+          "title": "Agent introspection",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/introspection-diag.html",
+          "children": null
+        },
+        {
+          "title": "Docker diagnostics in Amazon ECS",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-diags.html",
+          "children": null
+        },
+        {
+          "title": "Configuring verbose output from the Docker daemon in Amazon ECS",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-debug-mode.html",
+          "children": null
+        },
+        {
+          "title": "Troubleshoot the Docker API error (500): devmapper in Amazon ECS",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/CannotCreateContainerError.html",
+          "children": null
+        },
+        {
+          "title": "Troubleshoot ECS Exec issues",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-exec-troubleshooting.html",
+          "children": null
+        },
+        {
+          "title": "Troubleshoot Amazon ECS Anywhere issues",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-anywhere-troubleshooting.html",
+          "children": null
+        },
+        {
+          "title": "Troubleshoot Java class loading issues on Fargate",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-java-class-loading.html",
+          "children": null
+        },
+        {
+          "title": "AWS Fargate throttling quotas",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/throttling.html",
+          "children": null
+        },
+        {
+          "title": "Troubleshooting Amazon ECS Managed Instances",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubleshooting-managed-instances-complete.html",
+          "children": [
+            {
+              "title": "Troubleshooting Amazon ECS Managed Instances",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubleshooting-managed-instances.html",
+              "children": null
+            },
+            {
+              "title": "Amazon ECS Managed Instances errors",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-errors.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "API failure reasons",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/api_failures_messages.html",
+          "children": null
+        },
+        {
+          "title": "Troubleshooting with Amazon Q Developer",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubleshooting-with-Q.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security.html",
+      "children": [
+        {
+          "title": "Identity and Access Management",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-iam.html",
+          "children": [
+            {
+              "title": "How Amazon Elastic Container Service works with IAM",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_service-with-iam.html",
+              "children": null
+            },
+            {
+              "title": "Identity-based policy examples",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_id-based-policy-examples.html",
+              "children": null
+            },
+            {
+              "title": "AWS managed policies for Amazon ECS",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-iam-awsmanpol.html",
+              "children": [
+                {
+                  "title": "AWS managed policies that are phased out for Amazon ECS",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-iam-awsmanpol-deprecated-policies.html",
+                  "children": null
+                },
+                {
+                  "title": "Migrating to AmazonECS_FullAccess",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-iam-awsmanpol-amazonecs-full-access-migration.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Using service-linked roles",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using-service-linked-roles.html",
+              "children": [
+                {
+                  "title": "Allow Amazon ECS to manage clusters",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using-service-linked-roles-for-clusters.html",
+                  "children": null
+                },
+                {
+                  "title": "Allow Amazon ECS to manage Amazon ECS Managed Instances",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using-service-linked-roles-instances.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "IAM roles for Amazon ECS",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-ecs-iam-role-overview.html",
+              "children": [
+                {
+                  "title": "Best practices for IAM roles",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-iam-roles.html",
+                  "children": null
+                },
+                {
+                  "title": "Task execution IAM role",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_execution_IAM_role.html",
+                  "children": null
+                },
+                {
+                  "title": "Task IAM role",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task-iam-roles.html",
+                  "children": null
+                },
+                {
+                  "title": "Container instance IAM role",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/instance_IAM_role.html",
+                  "children": null
+                },
+                {
+                  "title": "Amazon ECS Anywhere IAM role",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/iam-role-ecsanywhere.html",
+                  "children": null
+                },
+                {
+                  "title": "Infrastructure IAM role",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/infrastructure_IAM_role.html",
+                  "children": null
+                },
+                {
+                  "title": "Amazon ECS Managed Instances instance profile",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-instances-instance-profile.html",
+                  "children": null
+                },
+                {
+                  "title": "Infrastructure IAM role for load balancers",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AmazonECSInfrastructureRolePolicyForLoadBalancers.html",
+                  "children": null
+                },
+                {
+                  "title": "CodeDeploy IAM Role",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/codedeploy_IAM_role.html",
+                  "children": null
+                },
+                {
+                  "title": "EventBridge IAM Role",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/CWE_IAM_role.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Permissions required for the Amazon ECS console",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/console-permissions.html",
+              "children": [
+                {
+                  "title": "Permissions required for the Amazon ECS console with CloudFormation",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cloudformation-console-permissions.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Permissions required for Lambda functions in Amazon ECS blue/green deployments",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/blue-green-permissions.html",
+              "children": null
+            },
+            {
+              "title": "IAM permissions required for Amazon ECS service auto scaling",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/auto-scaling-IAM.html",
+              "children": null
+            },
+            {
+              "title": "Tag resources during creation",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/supported-iam-actions-tagging.html",
+              "children": [
+                {
+                  "title": "Control access to Amazon ECS resources using resource tags",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/control-access-with-tags.html",
+                  "children": null
+                },
+                {
+                  "title": "Example policies",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/iam-policies-ecs-console.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Troubleshooting",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security_iam_troubleshoot.html",
+              "children": null
+            },
+            {
+              "title": "IAM best practices",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-iam-bestpractices.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Logging and Monitoring",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-logging-monitoring.html",
+          "children": null
+        },
+        {
+          "title": "Compliance validation",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-compliance.html",
+          "children": [
+            {
+              "title": "Compliance and security best practices",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-compliance.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "AWS Fargate FIPS-140 compliance",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-fips-compliance.html",
+          "children": null
+        },
+        {
+          "title": "Infrastructure Security",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/infrastructure-security.html",
+          "children": [
+            {
+              "title": "Interface VPC endpoints (AWS PrivateLink)",
+              "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/vpc-endpoints.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Shared responsibility model",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-shared-model.html",
+          "children": null
+        },
+        {
+          "title": "Amazon ECS Managed Instances shared responsibility",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-shared-model-managed-instances.html",
+          "children": null
+        },
+        {
+          "title": "Network security best practices",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-network.html",
+          "children": null
+        },
+        {
+          "title": "Task and container security best practices",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/security-tasks-containers.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Tutorials",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-tutorials.html",
+      "children": [
+        {
+          "title": "Creating a Linux task for Fargate with the AWS CLI",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_AWSCLI_Fargate.html",
+          "children": null
+        },
+        {
+          "title": "Creating a Windows task for the Fargate with the AWS CLI",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_AWSCLI_Fargate_windows.html",
+          "children": null
+        },
+        {
+          "title": "Creating a task for EC2 with the AWS CLI",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_AWSCLI_EC2.html",
+          "children": null
+        },
+        {
+          "title": "Configuring Amazon ECS to listen for CloudWatch Events events",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_cwet.html",
+          "children": null
+        },
+        {
+          "title": "Sending Amazon Simple Notification Service alerts for task stopped events",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_cwet2.html",
+          "children": null
+        },
+        {
+          "title": "Concatenating multiline or stack-trace log messages",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/firelens-concatanate-multiline.html",
+          "children": null
+        },
+        {
+          "title": "Deploying Fluent Bit on Windows containers",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tutorial-deploy-fluentbit-on-windows.html",
+          "children": null
+        },
+        {
+          "title": "Using gMSA for EC2 Linux containers",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/linux-gmsa.html",
+          "children": null
+        },
+        {
+          "title": "Using gMSA for Linux containers on Fargate",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/fargate-linux-gmsa.html",
+          "children": null
+        },
+        {
+          "title": "Using Windows containers with domainless gMSA using the AWS CLI",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/tutorial-gmsa-windows.html",
+          "children": null
+        },
+        {
+          "title": "Learn how to use gMSAs for EC2 Windows containers",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/windows-gmsa.html",
+          "children": null
+        },
+        {
+          "title": "Using Image Builder to build customized Amazon ECS-optimized AMIs",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/image-builder-tutorial.html",
+          "children": null
+        },
+        {
+          "title": "Using AWS Deep Learning Containers",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/deep-learning-containers.html",
+          "children": null
+        },
+        {
+          "title": "Tutorial: Creating a Service Using a Blue/Green Deployment",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-blue-green.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Service quotas",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-quotas.html",
+      "children": [
+        {
+          "title": "Managing your service quotas in the AWS Management Console",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-quotas-manage.html",
+          "children": null
+        },
+        {
+          "title": "Handle service quotas and API throttling limits",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/operating-at-scale-service-quotas.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Using the API for Amazon ECS",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ProgrammingGuide.html",
+      "children": [
+        {
+          "title": "Actions by Amazon ECS resource",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/OperationList-query.html",
+          "children": null
+        },
+        {
+          "title": "API request throttling",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/request-throttling.html",
+          "children": null
+        },
+        {
+          "title": "Ensuring idempotency",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_Idempotency.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Document history",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/document_history.html",
+      "children": null
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ecs-dev",
+    "service": "Amazon ECS",
+    "title": "開発者ガイド",
+    "baseUrl": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/",
+    "priority": 1,
+    "pageCount": 571,
+    "generatedAt": "2026-09-22T00:40:21.154648017Z"
+  },
+  {
+    "id": "dynamodb-dev",
+    "service": "Amazon DynamoDB",
+    "title": "開発者ガイド",
+    "baseUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/",
+    "priority": 2,
+    "pageCount": 676,
+    "generatedAt": "2026-09-22T00:40:21.154648017Z"
+  },
+  {
+    "id": "aurora-ug",
+    "service": "Amazon Aurora",
+    "title": "ユーザーガイド",
+    "baseUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/",
+    "priority": 3,
+    "pageCount": 969,
+    "generatedAt": "2026-09-22T00:40:21.154648017Z"
+  }
+]

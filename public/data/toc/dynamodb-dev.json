@@ -1,0 +1,3526 @@
+{
+  "guideId": "dynamodb-dev",
+  "nodes": [
+    {
+      "title": "What is Amazon DynamoDB?",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
+      "children": null
+    },
+    {
+      "title": "Getting started with DynamoDB",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html",
+      "children": [
+        {
+          "title": "First-time user resources",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dynamodb-resources-first-time-users.html",
+          "children": null
+        },
+        {
+          "title": "Accessing DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AccessingDynamoDB.html",
+          "children": null
+        },
+        {
+          "title": "Setting up DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SettingUp.html",
+          "children": [
+            {
+              "title": "Setting up DynamoDB (web service)",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SettingUp.DynamoWebService.html",
+              "children": null
+            },
+            {
+              "title": "Setting up DynamoDB local (downloadable version)",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html",
+              "children": [
+                {
+                  "title": "Deploying",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html",
+                  "children": null
+                },
+                {
+                  "title": "Usage notes",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.UsageNotes.html",
+                  "children": null
+                },
+                {
+                  "title": "Release history",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocalHistory.html",
+                  "children": null
+                },
+                {
+                  "title": "DynamoDB local telemetry",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocalTelemetry.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Step 1: Create a table",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/getting-started-step-1.html",
+          "children": null
+        },
+        {
+          "title": "Step 2: Write data",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/getting-started-step-2.html",
+          "children": null
+        },
+        {
+          "title": "Step 3: Read data",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/getting-started-step-3.html",
+          "children": null
+        },
+        {
+          "title": "Step 4: Update data",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/getting-started-step-4.html",
+          "children": null
+        },
+        {
+          "title": "Step 5: Query data",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/getting-started-step-5.html",
+          "children": null
+        },
+        {
+          "title": "Step 6: (Optional) clean up",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/getting-started-step-6.html",
+          "children": null
+        },
+        {
+          "title": "Next steps",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/getting-started-NextSteps.html",
+          "children": null
+        },
+        {
+          "title": "Console-to-Code",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/console-to-code.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "How it works",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.html",
+      "children": [
+        {
+          "title": "Cheat sheet",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CheatSheet.html",
+          "children": null
+        },
+        {
+          "title": "Core components",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html",
+          "children": null
+        },
+        {
+          "title": "DynamoDB API",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.API.html",
+          "children": null
+        },
+        {
+          "title": "Supported data types and naming rules",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.NamingRulesDataTypes.html",
+          "children": null
+        },
+        {
+          "title": "DynamoDB table classes",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.TableClasses.html",
+          "children": null
+        },
+        {
+          "title": "Partitions and data distribution in DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.Partitions.html",
+          "children": null
+        },
+        {
+          "title": "Learn how to go from SQL to NoSQL",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.html",
+          "children": [
+            {
+              "title": "Relational or NoSQL?",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.WhyDynamoDB.html",
+              "children": null
+            },
+            {
+              "title": "Accessing and authentication",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.Accessing.html",
+              "children": null
+            },
+            {
+              "title": "Creating a table",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.CreateTable.html",
+              "children": null
+            },
+            {
+              "title": "Getting information about a table",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.GetTableInfo.html",
+              "children": null
+            },
+            {
+              "title": "Writing data to a table",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.WriteData.html",
+              "children": null
+            },
+            {
+              "title": "Reading data from a table",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.ReadData.html",
+              "children": [
+                {
+                  "title": "Reading an item using its primary key",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.ReadData.SingleItem.html",
+                  "children": null
+                },
+                {
+                  "title": "Querying a table",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.ReadData.Query.html",
+                  "children": null
+                },
+                {
+                  "title": "Scanning a table",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.ReadData.Scan.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Managing indexes",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.Indexes.html",
+              "children": null
+            },
+            {
+              "title": "Modifying data in a table",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.UpdateData.html",
+              "children": null
+            },
+            {
+              "title": "Deleting data from a table",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.DeleteData.html",
+              "children": null
+            },
+            {
+              "title": "Removing a table",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SQLtoNoSQL.RemoveTable.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Amazon DynamoDB learning resources and tools",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AdditionalResources.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Reads and writes",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ddb-reads-writes.html",
+      "children": [
+        {
+          "title": "DynamoDB read consistency",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.ReadConsistency.html",
+          "children": null
+        },
+        {
+          "title": "Read and write operations",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/read-write-operations.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "DynamoDB throughput capacity",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/capacity-mode.html",
+      "children": [
+        {
+          "title": "DynamoDB on-demand capacity mode",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/on-demand-capacity-mode.html",
+          "children": [
+            {
+              "title": "DynamoDB maximum throughput for on-demand tables",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/on-demand-capacity-mode-max-throughput.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Provisioned capacity mode",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/provisioned-capacity-mode.html",
+          "children": [
+            {
+              "title": "Managing throughput capacity with auto scaling",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html",
+              "children": [
+                {
+                  "title": "Using the AWS Management Console with DynamoDB auto scaling",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.Console.html",
+                  "children": null
+                },
+                {
+                  "title": "Using the AWS CLI to manage DynamoDB auto scaling",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.CLI.html",
+                  "children": null
+                },
+                {
+                  "title": "Using the AWS SDK to configure auto scaling",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.HowTo.SDK.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Reserved capacity",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/reserved-capacity.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Warm throughput",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/warm-throughput.html",
+          "children": [
+            {
+              "title": "Check your table's warm throughput",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/check-warm-throughput.html",
+              "children": null
+            },
+            {
+              "title": "Increase your table's warm throughput",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/update-warm-throughput.html",
+              "children": null
+            },
+            {
+              "title": "Create a table with higher warm throughput",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/create-table-warm-throughput.html",
+              "children": null
+            },
+            {
+              "title": "Warm throughput scenarios",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/warm-throughput-scenarios.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Burst and adaptive capacity",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/burst-adaptive-capacity.html",
+          "children": null
+        },
+        {
+          "title": "Switching capacity modes",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-switching-capacity-modes.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Programming with DynamoDB",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.html",
+      "children": [
+        {
+          "title": "Overview of AWS SDK support for DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.SDKOverview.html",
+          "children": [
+            {
+              "title": "Programmatic interfaces that work with DynamoDB",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.SDKs.Interfaces.html",
+              "children": null
+            },
+            {
+              "title": "Higher-level programming interfaces",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HigherLevelInterfaces.html",
+              "children": [
+                {
+                  "title": "Java 1.x: DynamoDBMapper",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBMapper.html",
+                  "children": [
+                    {
+                      "title": "DynamoDBMapper Class",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBMapper.Methods.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Supported Data Types",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBMapper.DataTypes.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Java Annotations for DynamoDB",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBMapper.Annotations.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Optional configuration settings for DynamoDBMapper",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBMapper.OptionalConfig.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Optimistic Locking With Version Number",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBMapper.OptimisticLocking.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Mapping Arbitrary Data",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBMapper.ArbitraryDataMapping.html",
+                      "children": null
+                    },
+                    {
+                      "title": "DynamoDBMapper examples",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBMapper.Examples.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Java 2.x: DynamoDB Enhanced Client",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBEnhanced.html",
+                  "children": null
+                },
+                {
+                  "title": ".NET: Document model",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DotNetSDKMidLevel.html",
+                  "children": null
+                },
+                {
+                  "title": ".NET: Object persistence model",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DotNetSDKHighLevel.html",
+                  "children": [
+                    {
+                      "title": "DynamoDB attributes",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DeclarativeTagsList.html",
+                      "children": null
+                    },
+                    {
+                      "title": "DynamoDBContext class",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DotNetDynamoDBContext.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Optimistic locking using version number",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBContext.VersionSupport.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Mapping arbitrary data",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBContext.ArbitraryDataMapping.html",
+                      "children": null
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Running the code examples",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CodeSamples.html",
+              "children": [
+                {
+                  "title": "Load sample data",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SampleData.html",
+                  "children": null
+                },
+                {
+                  "title": "Java code examples",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CodeSamples.Java.html",
+                  "children": null
+                },
+                {
+                  "title": ".NET code examples",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CodeSamples.DotNet.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Low-level API",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.LowLevelAPI.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Programming with Python",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/programming-with-python.html",
+          "children": null
+        },
+        {
+          "title": "Programming with JavaScript",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/programming-with-javascript.html",
+          "children": null
+        },
+        {
+          "title": "Programming with the AWS SDK for Java 2.x",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ProgrammingWithJava.html",
+          "children": null
+        },
+        {
+          "title": "Error handling",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Programming.Errors.html",
+          "children": null
+        },
+        {
+          "title": "Working with AWS SDKs",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/sdk-general-information-section.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Working with DynamoDB",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithDynamo.html",
+      "children": [
+        {
+          "title": "Working with tables",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.html",
+          "children": [
+            {
+              "title": "Basic operations on tables",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.Basics.html",
+              "children": null
+            },
+            {
+              "title": "Considerations when choosing a table class in DynamoDB",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.tableclasses.html",
+              "children": null
+            },
+            {
+              "title": "Tags and labels",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tagging.html",
+              "children": [
+                {
+                  "title": "Tagging resources",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tagging.Operations.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Working with global tables",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GlobalTables.html",
+          "children": [
+            {
+              "title": "Core concepts",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables-CoreConcepts.html",
+              "children": null
+            },
+            {
+              "title": "Same-account global table",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables-SameAccount.html",
+              "children": [
+                {
+                  "title": "How it works",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_HowItWorks.html",
+                  "children": null
+                },
+                {
+                  "title": "Tutorials: Creating global tables",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables.tutorial.html",
+                  "children": null
+                },
+                {
+                  "title": "Security",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables-security.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Multi-account global tables",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables-MultiAccount.html",
+              "children": [
+                {
+                  "title": "How it works",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_MA_HowItWorks.html",
+                  "children": null
+                },
+                {
+                  "title": "Tutorials: Creating multi-account global tables",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_MA.tutorial.html",
+                  "children": null
+                },
+                {
+                  "title": "Security",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables_MA_security.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Global tables billing",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/global-tables-billing.html",
+              "children": null
+            },
+            {
+              "title": "Global tables versions",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/V2globaltables_versions.html",
+              "children": null
+            },
+            {
+              "title": "Global tables best practices",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables-bestpractices.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Working with items",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html",
+          "children": [
+            {
+              "title": "Item sizes and formats",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CapacityUnitCalculations.html",
+              "children": null
+            },
+            {
+              "title": "Using expressions",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.html",
+              "children": [
+                {
+                  "title": "Specifying item attributes",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.Attributes.html",
+                  "children": null
+                },
+                {
+                  "title": "Expression attribute names",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.ExpressionAttributeNames.html",
+                  "children": null
+                },
+                {
+                  "title": "Expression attribute values",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.ExpressionAttributeValues.html",
+                  "children": null
+                },
+                {
+                  "title": "Projection expressions",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.ProjectionExpressions.html",
+                  "children": null
+                },
+                {
+                  "title": "Update expressions",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.UpdateExpressions.html",
+                  "children": null
+                },
+                {
+                  "title": "Condition and filter expressions",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.OperatorsAndFunctions.html",
+                  "children": null
+                },
+                {
+                  "title": "CLI example",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.ConditionExpressions.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Time to Live (TTL)",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html",
+              "children": [
+                {
+                  "title": "Enable TTL",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/time-to-live-ttl-how-to.html",
+                  "children": null
+                },
+                {
+                  "title": "Computing TTL",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/time-to-live-ttl-before-you-start.html",
+                  "children": null
+                },
+                {
+                  "title": "Working with expired items",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ttl-expired-items.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Querying tables",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.html",
+              "children": [
+                {
+                  "title": "Key condition expressions for queries",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.KeyConditionExpressions.html",
+                  "children": null
+                },
+                {
+                  "title": "Filter expressions for queries",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.FilterExpression.html",
+                  "children": null
+                },
+                {
+                  "title": "Paginating query results",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.Pagination.html",
+                  "children": null
+                },
+                {
+                  "title": "Other aspects of queries",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Query.Other.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Scanning tables",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Scan.html",
+              "children": null
+            },
+            {
+              "title": "PartiQL query language",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html",
+              "children": [
+                {
+                  "title": "Getting started",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-gettingstarted.html",
+                  "children": null
+                },
+                {
+                  "title": "Data types",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.data-types.html",
+                  "children": null
+                },
+                {
+                  "title": "Statements",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.statements.html",
+                  "children": [
+                    {
+                      "title": "Select",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.select.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Update",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.update.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Delete",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.delete.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Insert",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.insert.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Functions",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-functions.html",
+                  "children": [
+                    {
+                      "title": "Exists",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-functions.exists.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Begins_with",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-functions.beginswith.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Missing",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-functions.missing.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Attribute_type",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-functions.attribute_type.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Contains",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-functions.contains.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Size",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-functions.size.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Operators",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-operators.html",
+                  "children": null
+                },
+                {
+                  "title": "Transactions",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.multiplestatements.transactions.html",
+                  "children": null
+                },
+                {
+                  "title": "Batch operations",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.multiplestatements.batching.html",
+                  "children": null
+                },
+                {
+                  "title": "IAM policies",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-iam.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Working with items: Java",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/JavaDocumentAPIItemCRUD.html",
+              "children": [
+                {
+                  "title": "Example: CRUD operations - Java document API",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/JavaDocumentAPICRUDExample.html",
+                  "children": null
+                },
+                {
+                  "title": "Example: Batch operations - Java document API",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/batch-operation-document-api-java.html",
+                  "children": null
+                },
+                {
+                  "title": "Example: Handling binary type attributes - Java document API",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/JavaDocumentAPIBinaryTypeExample.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Working with items: .NET",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LowLevelDotNetItemCRUD.html",
+              "children": [
+                {
+                  "title": "Example: CRUD operations - .NET low-level API",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LowLevelDotNetItemsExample.html",
+                  "children": null
+                },
+                {
+                  "title": "Example: Batch operations - .NET low-level API",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/batch-operation-lowlevel-dotnet.html",
+                  "children": null
+                },
+                {
+                  "title": "Example: Handling binary type attributes - .NET low-level API",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LowLevelDotNetBinaryTypeExample.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Working with secondary indexes",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html",
+          "children": [
+            {
+              "title": "Global secondary indexes",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.html",
+              "children": [
+                {
+                  "title": "Design patterns",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.DesignPatterns.html",
+                  "children": [
+                    {
+                      "title": "Multi-attribute keys",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.DesignPattern.MultiAttributeKeys.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Managing Global Secondary Indexes in DynamoDB",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.OnlineOps.html",
+                  "children": null
+                },
+                {
+                  "title": "Detecting and correcting index key violations in DynamoDB",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.OnlineOps.ViolationDetection.html",
+                  "children": null
+                },
+                {
+                  "title": "Global Secondary Indexes: Java",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSIJavaDocumentAPI.html",
+                  "children": [
+                    {
+                      "title": "Example: Global Secondary Indexes - Java document API",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSIJavaDocumentAPI.Example.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Global Secondary Indexes: .NET",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSILowLevelDotNet.html",
+                  "children": [
+                    {
+                      "title": "Example: Global Secondary Indexes - .NET low-level API",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSILowLevelDotNet.Example.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Global Secondary Indexes: AWS CLI",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GCICli.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Local secondary indexes",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LSI.html",
+              "children": [
+                {
+                  "title": "Local Secondary Indexes: Java",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LSIJavaDocumentAPI.html",
+                  "children": [
+                    {
+                      "title": "Example: Local Secondary Indexes - Java document API",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LSIJavaDocumentAPI.Example.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Local Secondary Indexes: .NET",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LSILowLevelDotNet.html",
+                  "children": [
+                    {
+                      "title": "Example: Local Secondary Indexes - .NET low-level API",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LSILowLevelDotNet.Example.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Local Secondary Indexes: AWS CLI",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LCICli.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Working with vector indexes",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/VectorSearch.html",
+          "children": [
+            {
+              "title": "Creating and searching vector indexes",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/VectorSearchWorkingWith.html",
+              "children": null
+            },
+            {
+              "title": "Requirements and limitations",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/VectorSearch.Requirements.html",
+              "children": null
+            },
+            {
+              "title": "Security and access control",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/VectorSearch.Security.html",
+              "children": null
+            },
+            {
+              "title": "Tutorial: Your first vector search",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/VectorSearchTutorial.html",
+              "children": null
+            },
+            {
+              "title": "Data synchronization",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/VectorSearchDataSync.html",
+              "children": null
+            },
+            {
+              "title": "Best practices",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/VectorSearchBestPractices.html",
+              "children": null
+            },
+            {
+              "title": "Storage considerations",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/VectorSearchStorage.html",
+              "children": null
+            },
+            {
+              "title": "Monitoring capacity",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/VectorSearchMonitoring.html",
+              "children": null
+            },
+            {
+              "title": "Troubleshooting",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/VectorSearchTroubleshooting.html",
+              "children": null
+            },
+            {
+              "title": "Global tables",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/VectorSearchGlobalTables.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Working with transactions",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transactions.html",
+          "children": [
+            {
+              "title": "How it works",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transaction-apis.html",
+              "children": null
+            },
+            {
+              "title": "Using IAM with transactions",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transaction-apis-iam.html",
+              "children": null
+            },
+            {
+              "title": "Example code",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/transaction-example.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Working with streams",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/streamsmain.html",
+          "children": [
+            {
+              "title": "Working with Kinesis Data Streams",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kds.html",
+              "children": [
+                {
+                  "title": "Getting started",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kds_gettingstarted.html",
+                  "children": null
+                },
+                {
+                  "title": "Using shards and monitoring shard-level metrics",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kds_using-shards-and-metrics.html",
+                  "children": null
+                },
+                {
+                  "title": "Using IAM policies",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kds_iam.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Working with DynamoDB Streams",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.html",
+              "children": [
+                {
+                  "title": "DynamoDB Streams and TTL",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/time-to-live-ttl-streams.html",
+                  "children": null
+                },
+                {
+                  "title": "Tagging streams",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Tagging.Streams.html",
+                  "children": null
+                },
+                {
+                  "title": "Using the DynamoDB Streams Kinesis adapter to process stream records",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.KCLAdapter.html",
+                  "children": [
+                    {
+                      "title": "Migrating from KCL 1.x to KCL 3.5.x+",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/streams-migrating-kcl.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Roll back to the previous KCL version",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kcl-migration-rollback.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Roll forward to Phase 2 KCL 3.5.x+ after a rollback",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kcl-migration-rollforward.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Migration to single table format for KCL 3.5.x+",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kcl-single-table-format.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Walkthrough: DynamoDB Streams Kinesis adapter",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.KCLAdapter.Walkthrough.html",
+                      "children": [
+                        {
+                          "title": "Complete program: DynamoDB Streams Kinesis adapter",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.KCLAdapter.Walkthrough.CompleteProgram.html",
+                          "children": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "DynamoDB Streams low-level API: Java example",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.LowLevel.Walkthrough.html",
+                  "children": null
+                },
+                {
+                  "title": "DynamoDB Streams and AWS Lambda triggers",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.Lambda.html",
+                  "children": [
+                    {
+                      "title": "Tutorial #1: Processing all events",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.Lambda.Tutorial.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Tutorial #2: Processing some events",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.Lambda.Tutorial2.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Best practices",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.Lambda.BestPracticesWithDynamoDB.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "DynamoDB Streams and Apache Flink",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/StreamsApacheFlink.xml.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "In-memory acceleration with DAX",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.html",
+      "children": [
+        {
+          "title": "How it works",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.concepts.html",
+          "children": null
+        },
+        {
+          "title": "DAX cluster components",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.concepts.cluster.html",
+          "children": null
+        },
+        {
+          "title": "Creating a DAX cluster",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.create-cluster.html",
+          "children": [
+            {
+              "title": "DAX and IPv6",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.create-cluster.DAX_and_IPV6.html",
+              "children": null
+            },
+            {
+              "title": "Using the AWS CLI",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.create-cluster.cli.html",
+              "children": null
+            },
+            {
+              "title": "Using the console",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.create-cluster.console.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Consistency models",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.consistency.html",
+          "children": null
+        },
+        {
+          "title": "Developing with the DAX client",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.html",
+          "children": [
+            {
+              "title": "Tutorial: Running a sample application",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.sample-app.html",
+              "children": [
+                {
+                  "title": "Step 1: Launch an EC2 instance",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.launch-ec2-instance.html",
+                  "children": null
+                },
+                {
+                  "title": "Step 2: Create a user and policy",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.create-user-policy.html",
+                  "children": null
+                },
+                {
+                  "title": "Step 3: Configure an EC2 instance",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.configure-ec2-instance.html",
+                  "children": null
+                },
+                {
+                  "title": "Step 4: Run a sample application",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application.html",
+                  "children": [
+                    {
+                      "title": "Node.js and DAX",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-nodejs-3.html",
+                      "children": [
+                        {
+                          "title": "Client configuration",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX-client-config-JS.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Migrating to DAX Node.js SDK V3",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-nodejs-3-migrating.html",
+                          "children": null
+                        },
+                        {
+                          "title": "TryDax.js",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.tutorial-TryDax.html",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Go and DAX",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-go-2.html",
+                      "children": [
+                        {
+                          "title": "Client configuration",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX-client-config-Go.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Migrating to DAX Go SDK V2",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-go-migrating.html",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Java and DAX",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-java.html",
+                      "children": [
+                        {
+                          "title": "TryDax.java",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.TryDax.java.html",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "title": ".NET and DAX",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-dotnet.html",
+                      "children": [
+                        {
+                          "title": "01-CreateTable.cs",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-dotnet.01-CreateTable.html",
+                          "children": null
+                        },
+                        {
+                          "title": "02-Write-Data.cs",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-dotnet.02-Write-Data.html",
+                          "children": null
+                        },
+                        {
+                          "title": "03-GetItem-Test.cs",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-dotnet.03-GetItem-Test.html",
+                          "children": null
+                        },
+                        {
+                          "title": "04-Query-Test.cs",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-dotnet.04-Query-Test.html",
+                          "children": null
+                        },
+                        {
+                          "title": "05-Scan-Test.cs",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-dotnet.05-Scan-Test.html",
+                          "children": null
+                        },
+                        {
+                          "title": "06-DeleteTable.cs",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-dotnet.06-DeleteTable.html",
+                          "children": null
+                        }
+                      ]
+                    },
+                    {
+                      "title": "Python and DAX",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-python.html",
+                      "children": [
+                        {
+                          "title": "01-create-table.py",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-python.01-create-table.html",
+                          "children": null
+                        },
+                        {
+                          "title": "02-write-data.py",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-python.02-write-data.html",
+                          "children": null
+                        },
+                        {
+                          "title": "03-getitem-test.py",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-python.03-getitem-test.html",
+                          "children": null
+                        },
+                        {
+                          "title": "04-query-test.py",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-python.04-query-test.html",
+                          "children": null
+                        },
+                        {
+                          "title": "05-scan-test.py",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-python.05-scan-test.html",
+                          "children": null
+                        },
+                        {
+                          "title": "06-delete-table.py",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-python.06-delete-table.html",
+                          "children": null
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "Modifying an existing application to use DAX",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.modify-your-app.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Managing DAX clusters",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.cluster-management.html",
+          "children": null
+        },
+        {
+          "title": "Monitoring DynamoDB Accelerator",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.Monitoring.html",
+          "children": [
+            {
+              "title": "DAX monitoring tools",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax-monitoring-automated-manual.html",
+              "children": null
+            },
+            {
+              "title": "Monitoring with CloudWatch",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax-monitoring-cloudwatch.html",
+              "children": [
+                {
+                  "title": "Metrics and dimensions",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax-metrics-dimensions-dax.html",
+                  "children": null
+                },
+                {
+                  "title": "Creating alarms",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax-creating-alarms.html",
+                  "children": null
+                },
+                {
+                  "title": "Production monitoring",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax-production-monitoring.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Logging DAX operations using AWS CloudTrail",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax-logging-using-cloudtrail.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "DAX T3/T2 burstable instances",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.Burstable.html",
+          "children": null
+        },
+        {
+          "title": "DAX access control",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.access-control.html",
+          "children": null
+        },
+        {
+          "title": "DAX encryption at rest",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAXEncryptionAtRest.html",
+          "children": null
+        },
+        {
+          "title": "DAX encryption in transit",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAXEncryptionInTransit.html",
+          "children": null
+        },
+        {
+          "title": "Using service-linked roles for DAX",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/using-service-linked-roles.html",
+          "children": null
+        },
+        {
+          "title": "Accessing DAX across AWS accounts",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.cross-account-access.html",
+          "children": null
+        },
+        {
+          "title": "DAX cluster sizing guide",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.sizing-guide.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Data modeling",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling.html",
+      "children": [
+        {
+          "title": "Working with Item Collections",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItemCollections.html",
+          "children": null
+        },
+        {
+          "title": "Data modeling foundations",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling-foundations.html",
+          "children": null
+        },
+        {
+          "title": "Data modeling building blocks",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling-blocks.html",
+          "children": null
+        },
+        {
+          "title": "Data modeling schema design packages",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling-schemas.html",
+          "children": [
+            {
+              "title": "Social network",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling-schema-social-network.html",
+              "children": null
+            },
+            {
+              "title": "Gaming profile",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling-schema-gaming-profile.html",
+              "children": null
+            },
+            {
+              "title": "Complaint management system",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling-complaint-management.html",
+              "children": null
+            },
+            {
+              "title": "Recurring payments",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling-schema-recurring-payments.html",
+              "children": null
+            },
+            {
+              "title": "Device status updates",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling-device-status.html",
+              "children": null
+            },
+            {
+              "title": "Online shop",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-modeling-online-shop.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Relational modeling",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-relational-modeling.html",
+          "children": [
+            {
+              "title": "First steps",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-modeling-nosql.html",
+              "children": null
+            },
+            {
+              "title": "Example",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-modeling-nosql-B.html",
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Migrating to DynamoDB",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/migration-guide.html",
+      "children": null
+    },
+    {
+      "title": "NoSQL Workbench",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html",
+      "children": [
+        {
+          "title": "Download",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.settingup.html",
+          "children": null
+        },
+        {
+          "title": "Data modeler",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.Modeler.html",
+          "children": [
+            {
+              "title": "Creating a new model",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.Modeler.CreateNew.html",
+              "children": null
+            },
+            {
+              "title": "Importing an existing model",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.Modeler.ImportExisting.html",
+              "children": null
+            },
+            {
+              "title": "Editing an existing model",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.Modeler.Edit.html",
+              "children": null
+            },
+            {
+              "title": "Adding sample data",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.Modeler.AddData.html",
+              "children": null
+            },
+            {
+              "title": "Adding and validating access patterns",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.Modeler.AccessPatterns.html",
+              "children": null
+            },
+            {
+              "title": "Importing from CSV",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.Modeler.ImportCSV.html",
+              "children": null
+            },
+            {
+              "title": "Facets",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.Modeler.Facets.html",
+              "children": null
+            },
+            {
+              "title": "Aggregate view",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.Modeler.AggregateView.html",
+              "children": null
+            },
+            {
+              "title": "Exporting a model",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.Modeler.ExportModel.html",
+              "children": null
+            },
+            {
+              "title": "Committing a data model",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.Modeler.Commit.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Operation builder",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.querybuilder.html",
+          "children": [
+            {
+              "title": "Connecting to datasets",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.querybuilder.connect.html",
+              "children": null
+            },
+            {
+              "title": "Building operations",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.querybuilder.operationbuilder.html",
+              "children": [
+                {
+                  "title": "PartiQL statements",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.querybuilder.partiql.html",
+                  "children": null
+                },
+                {
+                  "title": "API operations",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.querybuilder.operationbuilder.api.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Cloning tables",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.querybuilder.cloning-tables.html",
+              "children": null
+            },
+            {
+              "title": "Exporting to CSV",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.querybuilder.exportcsv.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Sample data models",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.SampleModels.html",
+          "children": null
+        },
+        {
+          "title": "Release history",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkbenchDocumentHistory.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Backup and restore",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup-and-Restore.html",
+      "children": [
+        {
+          "title": "Point-in-time backups",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Point-in-time-recovery.html",
+          "children": [
+            {
+              "title": "Enable point-in-time recovery",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/PointInTimeRecovery_Howitworks.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "On-demand backups",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/backuprestore_HowItWorks.html",
+          "children": [
+            {
+              "title": "How it works",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CreateBackup.html",
+              "children": null
+            },
+            {
+              "title": "Backing up a table",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Backup.Tutorial.html",
+              "children": null
+            },
+            {
+              "title": "Restoring a table",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Restore.Tutorial.html",
+              "children": null
+            },
+            {
+              "title": "Deleting a table backup",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Delete.Tutorial.html",
+              "children": null
+            },
+            {
+              "title": "Using IAM",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/backuprestore_IAM.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Billing for backups",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/backup-restore-billing.html",
+          "children": null
+        },
+        {
+          "title": "Restores",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/pointintimerecovery_restores.html",
+          "children": [
+            {
+              "title": "Restoring a DynamoDB table to a point in time",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/PointInTimeRecovery.Tutorial.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Using AWS Backup",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/backuprestore_HowItWorksAWS.html",
+          "children": [
+            {
+              "title": "How it works",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedBackupsAWS.html",
+              "children": null
+            },
+            {
+              "title": "Creating backups",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CreateBackupAWS.html",
+              "children": null
+            },
+            {
+              "title": "Copying backups",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CrossRegionAccountCopyAWS.html",
+              "children": null
+            },
+            {
+              "title": "Restoring a table",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Restore.TutorialAWS.html",
+              "children": null
+            },
+            {
+              "title": "Deleting backups",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Delete.TutorialAWS.html",
+              "children": null
+            },
+            {
+              "title": "On-demand backups managed by AWS Backup versus DynamoDB",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/UsageNotesAWS.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Choosing your disaster recovery strategy for Amazon DynamoDB workloads",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamodbDisasterRecoveryStrategy.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Code examples",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/service_code_examples.html",
+      "children": [
+        {
+          "title": "Basics",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/service_code_examples_basics.html",
+          "children": [
+            {
+              "title": "Hello DynamoDB",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Hello_section.html",
+              "children": null
+            },
+            {
+              "title": "Learn the basics",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_GettingStartedMovies_section.html",
+              "children": null
+            },
+            {
+              "title": "Actions",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/service_code_examples_actions.html",
+              "children": [
+                {
+                  "title": "BatchExecuteStatement",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_BatchExecuteStatement_section.html",
+                  "children": null
+                },
+                {
+                  "title": "BatchGetItem",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_BatchGetItem_section.html",
+                  "children": null
+                },
+                {
+                  "title": "BatchWriteItem",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_BatchWriteItem_section.html",
+                  "children": null
+                },
+                {
+                  "title": "CreateTable",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_CreateTable_section.html",
+                  "children": null
+                },
+                {
+                  "title": "DeleteItem",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_DeleteItem_section.html",
+                  "children": null
+                },
+                {
+                  "title": "DeleteTable",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_DeleteTable_section.html",
+                  "children": null
+                },
+                {
+                  "title": "DescribeTable",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_DescribeTable_section.html",
+                  "children": null
+                },
+                {
+                  "title": "DescribeTimeToLive",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_DescribeTimeToLive_section.html",
+                  "children": null
+                },
+                {
+                  "title": "ExecuteStatement",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_ExecuteStatement_section.html",
+                  "children": null
+                },
+                {
+                  "title": "GetItem",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_GetItem_section.html",
+                  "children": null
+                },
+                {
+                  "title": "ListTables",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_ListTables_section.html",
+                  "children": null
+                },
+                {
+                  "title": "PutItem",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_PutItem_section.html",
+                  "children": null
+                },
+                {
+                  "title": "Query",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Query_section.html",
+                  "children": null
+                },
+                {
+                  "title": "Scan",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scan_section.html",
+                  "children": null
+                },
+                {
+                  "title": "UpdateItem",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_UpdateItem_section.html",
+                  "children": null
+                },
+                {
+                  "title": "UpdateTable",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_UpdateTable_section.html",
+                  "children": null
+                },
+                {
+                  "title": "UpdateTimeToLive",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_UpdateTimeToLive_section.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Scenarios",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/service_code_examples_scenarios.html",
+          "children": [
+            {
+              "title": "Accelerate reads with DAX",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Usage_DaxDemo_section.html",
+              "children": null
+            },
+            {
+              "title": "Advanced Global Secondary Index scenarios",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_GSIAdvanced_section.html",
+              "children": null
+            },
+            {
+              "title": "Build an app to submit data to a DynamoDB table",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_cross_SubmitDataApp_section.html",
+              "children": null
+            },
+            {
+              "title": "Compare multiple values with a single attribute",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_CompareMultipleValues_section.html",
+              "children": null
+            },
+            {
+              "title": "Conditionally update an item's TTL",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_UpdateItemConditionalTTL_section.html",
+              "children": null
+            },
+            {
+              "title": "Connect to a local instance",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_local_section.html",
+              "children": null
+            },
+            {
+              "title": "Count expression operators",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_ExpressionOperatorCounting_section.html",
+              "children": null
+            },
+            {
+              "title": "Create a REST API to track COVID-19 data",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_cross_ApiGatewayDataTracker_section.html",
+              "children": null
+            },
+            {
+              "title": "Create a messenger application",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_cross_StepFunctionsMessenger_section.html",
+              "children": null
+            },
+            {
+              "title": "Create a serverless application to manage photos",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_cross_PAM_section.html",
+              "children": null
+            },
+            {
+              "title": "Create a table with global secondary index",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_CreateTableWithGlobalSecondaryIndex_section.html",
+              "children": null
+            },
+            {
+              "title": "Create a table with warm throughput enabled",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_CreateTableWarmThroughput_section.html",
+              "children": null
+            },
+            {
+              "title": "Create a web application to track DynamoDB data",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_cross_DynamoDBDataTracker_section.html",
+              "children": null
+            },
+            {
+              "title": "Create a websocket chat application",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_cross_ApiGatewayWebsocketChat_section.html",
+              "children": null
+            },
+            {
+              "title": "Create an item with a TTL",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_PutItemTTL_section.html",
+              "children": null
+            },
+            {
+              "title": "Create and manage MRSC global tables",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_MRSCGlobalTables_section.html",
+              "children": null
+            },
+            {
+              "title": "Create and manage global tables demonstrating MREC",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_GlobalTableOperations_section.html",
+              "children": null
+            },
+            {
+              "title": "Delete data using PartiQL DELETE",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_PartiQLDelete_section.html",
+              "children": null
+            },
+            {
+              "title": "Detect PPE in images",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_cross_RekognitionPhotoAnalyzerPPE_section.html",
+              "children": null
+            },
+            {
+              "title": "Getting started with NoSQL databases",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_GettingStarted_070_section.html",
+              "children": null
+            },
+            {
+              "title": "Insert data using PartiQL INSERT",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_PartiQLInsert_section.html",
+              "children": null
+            },
+            {
+              "title": "Invoke a Lambda function from a browser",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_cross_LambdaForBrowser_section.html",
+              "children": null
+            },
+            {
+              "title": "Manage Global Secondary Indexes",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_GSILifecycle_section.html",
+              "children": null
+            },
+            {
+              "title": "Manage resource-based policies",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_ResourcePolicyLifecycle_section.html",
+              "children": null
+            },
+            {
+              "title": "Monitor DynamoDB performance",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_cross_MonitorDynamoDB_section.html",
+              "children": null
+            },
+            {
+              "title": "Perform advanced query operations",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_AdvancedQueryTechniques_section.html",
+              "children": null
+            },
+            {
+              "title": "Perform list operations",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_ListOperations_section.html",
+              "children": null
+            },
+            {
+              "title": "Perform map operations",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_MapOperations_section.html",
+              "children": null
+            },
+            {
+              "title": "Perform set operations",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_SetOperations_section.html",
+              "children": null
+            },
+            {
+              "title": "Query a table by using batches of PartiQL statements",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_PartiQLBatch_section.html",
+              "children": null
+            },
+            {
+              "title": "Query a table using PartiQL",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_PartiQLSingle_section.html",
+              "children": null
+            },
+            {
+              "title": "Query a table using a Global Secondary Index",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenarios_QueryWithGlobalSecondaryIndex_section.html",
+              "children": null
+            },
+            {
+              "title": "Query a table using a begins_with condition",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenarios_QueryWithBeginsWithCondition_section.html",
+              "children": null
+            },
+            {
+              "title": "Query a table using a date range",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenarios_QueryWithDateRange_section.html",
+              "children": null
+            },
+            {
+              "title": "Query a table with a complex filter expression",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenarios_QueryWithComplexFilter_section.html",
+              "children": null
+            },
+            {
+              "title": "Query a table with a dynamic filter expression",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenarios_QueryWithDynamicFilter_section.html",
+              "children": null
+            },
+            {
+              "title": "Query a table with a filter expression and limit",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenarios_QueryWithFilterAndLimit_section.html",
+              "children": null
+            },
+            {
+              "title": "Query a table with nested attributes",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenarios_QueryWithNestedAttributes_section.html",
+              "children": null
+            },
+            {
+              "title": "Query a table with pagination",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenarios_QueryWithPagination_section.html",
+              "children": null
+            },
+            {
+              "title": "Query a table with strongly consistent reads",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenarios_QueryWithStronglyConsistentReads_section.html",
+              "children": null
+            },
+            {
+              "title": "Query data using PartiQL SELECT",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_PartiQLSelect_section.html",
+              "children": null
+            },
+            {
+              "title": "Query for TTL items",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_QueryFilteredTTL_section.html",
+              "children": null
+            },
+            {
+              "title": "Query tables using date and time patterns",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_DateTimeQueries_section.html",
+              "children": null
+            },
+            {
+              "title": "Save EXIF and other image information",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_cross_DetectLabels_section.html",
+              "children": null
+            },
+            {
+              "title": "Set up Attribute-Based Access Control",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_ABACSetup_section.html",
+              "children": null
+            },
+            {
+              "title": "Understand update expression order",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_UpdateExpressionOrder_section.html",
+              "children": null
+            },
+            {
+              "title": "Update a table's warm throughput setting",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_UpdateTableWarmThroughput_section.html",
+              "children": null
+            },
+            {
+              "title": "Update an item's TTL",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_UpdateItemTTL_section.html",
+              "children": null
+            },
+            {
+              "title": "Update data using PartiQL UPDATE",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_PartiQLUpdate_section.html",
+              "children": null
+            },
+            {
+              "title": "Use API Gateway to invoke a Lambda function",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_cross_LambdaAPIGateway_section.html",
+              "children": null
+            },
+            {
+              "title": "Use Step Functions to invoke Lambda functions",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_cross_ServerlessWorkflows_section.html",
+              "children": null
+            },
+            {
+              "title": "Use a document model",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_MidLevelInterface_section.html",
+              "children": null
+            },
+            {
+              "title": "Use a high-level object persistence model",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_HighLevelInterface_section.html",
+              "children": null
+            },
+            {
+              "title": "Use atomic counter operations",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_AtomicCounterOperations_section.html",
+              "children": null
+            },
+            {
+              "title": "Use conditional operations",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_ConditionalOperations_section.html",
+              "children": null
+            },
+            {
+              "title": "Use expression attribute names",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_ExpressionAttributeNames_section.html",
+              "children": null
+            },
+            {
+              "title": "Use scheduled events to invoke a Lambda function",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_cross_LambdaScheduledEvents_section.html",
+              "children": null
+            },
+            {
+              "title": "Work with Local Secondary Indexes",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_LSIExamples_section.html",
+              "children": null
+            },
+            {
+              "title": "Work with Streams and Time-to-Live",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_StreamsAndTTL_section.html",
+              "children": null
+            },
+            {
+              "title": "Work with global tables and multi-Region replication eventual consistency (MREC)",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_MultiRegionReplication_section.html",
+              "children": null
+            },
+            {
+              "title": "Work with resource tagging",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_TaggingExamples_section.html",
+              "children": null
+            },
+            {
+              "title": "Work with table encryption",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_dynamodb_Scenario_EncryptionExamples_section.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Serverless examples",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/service_code_examples_serverless_examples.html",
+          "children": [
+            {
+              "title": "Invoke a Lambda function from a DynamoDB trigger",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_serverless_DynamoDB_Lambda_section.html",
+              "children": null
+            },
+            {
+              "title": "Reporting batch item failures for Lambda functions with a DynamoDB trigger",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_serverless_DynamoDB_Lambda_batch_item_failures_section.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "AWS community contributions",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/service_code_examples_aws_community_contributions.html",
+          "children": [
+            {
+              "title": "Build and test a serverless application",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/example_tributary-lite_serverless-application_section.html",
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/security.html",
+      "children": [
+        {
+          "title": "AWS managed policies",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ddb-security-iam.awsmanpol.html",
+          "children": null
+        },
+        {
+          "title": "Resource-based policies",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/access-control-resource-based.html",
+          "children": [
+            {
+              "title": "Create table",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rbac-create-table.html",
+              "children": null
+            },
+            {
+              "title": "Attach resource-based policy",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rbac-attach-resource-based-policy.html",
+              "children": null
+            },
+            {
+              "title": "Attach policy to a stream",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rbac-attach-resource-policy-streams.html",
+              "children": null
+            },
+            {
+              "title": "Remove resource-based policy",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rbac-delete-resource-based-policy.html",
+              "children": null
+            },
+            {
+              "title": "Cross-account access",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rbac-cross-account-access.html",
+              "children": null
+            },
+            {
+              "title": "Blocking public access",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rbac-bpa-rbp.html",
+              "children": null
+            },
+            {
+              "title": "API operations",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rbac-iam-actions.html",
+              "children": null
+            },
+            {
+              "title": "IAM authorization",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rbac-auth-iam-id-based-policies-DDB.html",
+              "children": null
+            },
+            {
+              "title": "Examples",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rbac-examples.html",
+              "children": null
+            },
+            {
+              "title": "Considerations",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rbac-considerations.html",
+              "children": null
+            },
+            {
+              "title": "Best practices",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/rbac-best-practices.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Attribute-based access control",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/attribute-based-access-control.html",
+          "children": [
+            {
+              "title": "ABAC for tables and indexes",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/abac-tables.html",
+              "children": [
+                {
+                  "title": "Enabling ABAC in DynamoDB",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/abac-enable-ddb.html",
+                  "children": null
+                },
+                {
+                  "title": "Get started with ABAC",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/abac-implementation-ddb-tables.html",
+                  "children": null
+                },
+                {
+                  "title": "Example use cases",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/abac-example-use-cases.html",
+                  "children": null
+                },
+                {
+                  "title": "Troubleshooting",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/abac-troubleshooting.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "ABAC for DynamoDB Streams",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/abac-streams.html",
+              "children": [
+                {
+                  "title": "Enabling ABAC for DynamoDB Streams",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/abac-enable-streams.html",
+                  "children": null
+                },
+                {
+                  "title": "Using Streams ABAC",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/abac-implementation-streams.html",
+                  "children": null
+                },
+                {
+                  "title": "Streams ABAC examples",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/abac-examples-streams.html",
+                  "children": [
+                    {
+                      "title": "Example 1: aws:ResourceTag",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/streams-abac-example-1.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Example 2: aws:RequestTag",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/streams-abac-example-2.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Example 3: aws:TagKeys",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/streams-abac-example-3.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Example 4: CloudFormation",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/streams-abac-example-4.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "Troubleshooting",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/abac-troubleshooting-streams.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Data protection",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/data-protection.html",
+          "children": [
+            {
+              "title": "Encryption at rest",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EncryptionAtRest.html",
+              "children": [
+                {
+                  "title": "How it works",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/encryption.howitworks.html",
+                  "children": null
+                },
+                {
+                  "title": "Usage notes",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/encryption.usagenotes.html",
+                  "children": null
+                },
+                {
+                  "title": "Managing encrypted tables",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/encryption.tutorial.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Securing DynamoDB connections",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/inter-network-traffic-privacy.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "IAM",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/identity-and-access-mgmt.html",
+          "children": [
+            {
+              "title": "Identity and Access Management",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/security-iam.html",
+              "children": [
+                {
+                  "title": "How Amazon DynamoDB works with IAM",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/security_iam_service-with-iam.html",
+                  "children": null
+                },
+                {
+                  "title": "Identity-based policy examples",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/security_iam_id-based-policy-examples.html",
+                  "children": [
+                    {
+                      "title": "Using identity-based policies",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/using-identity-based-policies.html",
+                      "children": [
+                        {
+                          "title": "Perform any actions on a table",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/grant-permissions-to-any-action-on-table.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Read-only access on items",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/read-only-permissions-on-table-items.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Access to a specific table and its indexes",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/iam-policy-specific-table-indexes.html",
+                          "children": null
+                        },
+                        {
+                          "title": "CRUD operations on all data",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/iam-policy-example-data-crud.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Separate environments in the same AWS account",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/iam-policy-separate-environments.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Prevent purchase of reserved capacity",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/iam-prevent-purchase-reserved-capacity.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Read access for a stream only",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/iam-policy-read-stream-only.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Lambda function to process stream records",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/iam-policy-example-lamda-process-dynamodb-streams.html",
+                          "children": null
+                        },
+                        {
+                          "title": "CRUD operations on a DAX cluster",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/iam-policy-example-read-write-dax-access.html",
+                          "children": null
+                        },
+                        {
+                          "title": "Search a vector index",
+                          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/iam-policy-example-search-vectors.html",
+                          "children": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "title": "Troubleshooting",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/security_iam_troubleshoot.html",
+                  "children": null
+                },
+                {
+                  "title": "Prevent purchase of reserved capacity",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/iam-policy-prevent-purchase-reserved-capacity.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Using conditions",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/specifying-conditions.html",
+              "children": [
+                {
+                  "title": "Using web identity federation",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WIF.html",
+                  "children": [
+                    {
+                      "title": "Preparing to use web identity federation",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WIF.PreparingForUse.html",
+                      "children": null
+                    },
+                    {
+                      "title": "Writing your app to use web identity federation",
+                      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WIF.RunningYourApp.html",
+                      "children": null
+                    }
+                  ]
+                },
+                {
+                  "title": "DynamoDB API permissions reference",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/api-permissions-reference.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Compliance validation",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Compliance.html",
+          "children": null
+        },
+        {
+          "title": "Resilience",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/disaster-recovery-resiliency.html",
+          "children": null
+        },
+        {
+          "title": "Infrastructure security",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/network-isolation.html",
+          "children": null
+        },
+        {
+          "title": "AWS PrivateLink for DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/privatelink-interface-endpoints.html",
+          "children": [
+            {
+              "title": "AWS PrivateLink for DynamoDB Streams",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/privatelink-streams.html",
+              "children": null
+            },
+            {
+              "title": "AWS PrivateLink for DAX",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax-private-link.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Configuration and vulnerability analysis",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/configuration-vulnerability.html",
+          "children": null
+        },
+        {
+          "title": "Security best practices",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices-security.html",
+          "children": [
+            {
+              "title": "Preventative security best practices",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices-security-preventative.html",
+              "children": null
+            },
+            {
+              "title": "Detective security best practices",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices-security-detective.html",
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Monitoring and logging",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/MonitoringAndLoggingInDynamoDB.html",
+      "children": [
+        {
+          "title": "Monitoring metrics",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Monitoring-metrics-with-Amazon-CloudWatch.html",
+          "children": [
+            {
+              "title": "Metrics and dimensions",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/metrics-dimensions.html",
+              "children": null
+            },
+            {
+              "title": "Creating CloudWatch alarms in DynamoDB",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Monitoring-metrics-creating-cloudwatch-alarms.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Logging operations",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/logging-using-cloudtrail.html",
+          "children": [
+            {
+              "title": "Understanding DynamoDB log file entries",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/understanding-ddb-log-entries.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Contributor Insights",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/contributorinsights.html",
+          "children": [
+            {
+              "title": "How it works",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/contributorinsights_HowItWorks.html",
+              "children": null
+            },
+            {
+              "title": "Getting started",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/contributorinsights_tutorial.html",
+              "children": null
+            },
+            {
+              "title": "Using IAM",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Contributor_Insights_IAM.html",
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Best practices",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/best-practices.html",
+      "children": [
+        {
+          "title": "NoSQL design",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-general-nosql-design.html",
+          "children": null
+        },
+        {
+          "title": "The DynamoDB Well-Architected Lens",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-wal.html",
+          "children": [
+            {
+              "title": "Cost optimization",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-cost-optimization.html",
+              "children": [
+                {
+                  "title": "Evaluate your costs at the table level",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CostOptimization_TableLevelCostAnalysis.html",
+                  "children": null
+                },
+                {
+                  "title": "Evaluate your table capacity mode",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CostOptimization_TableCapacityMode.html",
+                  "children": null
+                },
+                {
+                  "title": "Evaluate your table's auto scaling settings",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CostOptimization_AutoScalingSettings.html",
+                  "children": null
+                },
+                {
+                  "title": "Evaluate your table class selection",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CostOptimization_TableClass.html",
+                  "children": null
+                },
+                {
+                  "title": "Identify your unused resources",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CostOptimization_UnusedResources.html",
+                  "children": null
+                },
+                {
+                  "title": "Evaluate your table usage patterns",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CostOptimization_TableUsagePatterns.html",
+                  "children": null
+                },
+                {
+                  "title": "Evaluate your streams usage",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CostOptimization_StreamsUsage.html",
+                  "children": null
+                },
+                {
+                  "title": "Evaluate your provisioned capacity for right-sized provisioning",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CostOptimization_RightSizedProvisioning.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Partition key design",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-partition-key-design.html",
+          "children": [
+            {
+              "title": "Distributing workloads",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-partition-key-uniform-load.html",
+              "children": null
+            },
+            {
+              "title": "Write sharding",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-partition-key-sharding.html",
+              "children": null
+            },
+            {
+              "title": "Uploading data efficiently",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-partition-key-data-upload.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Sort key design",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-sort-keys.html",
+          "children": null
+        },
+        {
+          "title": "Secondary indexes",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes.html",
+          "children": [
+            {
+              "title": "General guidelines",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes-general.html",
+              "children": null
+            },
+            {
+              "title": "Sparse indexes",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes-general-sparse-indexes.html",
+              "children": null
+            },
+            {
+              "title": "Aggregation",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-gsi-aggregation.html",
+              "children": null
+            },
+            {
+              "title": "GSI overloading",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-gsi-overloading.html",
+              "children": null
+            },
+            {
+              "title": "GSI sharding",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes-gsi-sharding.html",
+              "children": null
+            },
+            {
+              "title": "Creating a replica",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-indexes-gsi-replica.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Large items",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-use-s3-too.html",
+          "children": null
+        },
+        {
+          "title": "Time series data",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-time-series.html",
+          "children": null
+        },
+        {
+          "title": "Many-to-many relationships",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-adjacency-graphs.html",
+          "children": null
+        },
+        {
+          "title": "Querying and scanning",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-query-scan.html",
+          "children": null
+        },
+        {
+          "title": "Table design",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-table-design.html",
+          "children": null
+        },
+        {
+          "title": "Using global tables",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-global-table-design.html",
+          "children": [
+            {
+              "title": "Write modes",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-global-table-design.prescriptive-guidance.writemodes.html",
+              "children": null
+            },
+            {
+              "title": "Routing strategies in DynamoDB",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-global-table-design.prescriptive-guidance.request-routing.html",
+              "children": null
+            },
+            {
+              "title": "Evacuation processes",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-global-table-design.prescriptive-guidance.evacuation.html",
+              "children": null
+            },
+            {
+              "title": "Throughput capacity planning",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-global-table-design.prescriptive-guidance.throughput.html",
+              "children": null
+            },
+            {
+              "title": "Preparation checklist",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-global-table-design.prescriptive-guidance.checklist-and-faq.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Control plane",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-control-plane.html",
+          "children": null
+        },
+        {
+          "title": "Bulk data operations",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BestPractices_BulkDataOperations.html",
+          "children": [
+            {
+              "title": "Conditional batch update",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BestPractices_ConditionalBatchUpdate.html",
+              "children": null
+            },
+            {
+              "title": "Efficient bulk operations",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BestPractices_EfficientBulkOperations.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Handling concurrent updates",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BestPractices_ImplementingVersionControl.html",
+          "children": [
+            {
+              "title": "Optimistic locking",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BestPractices_OptimisticLocking.html",
+              "children": null
+            },
+            {
+              "title": "Pessimistic locking with transactions",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BestPractices_PessimisticLocking.html",
+              "children": null
+            },
+            {
+              "title": "Distributed locking",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BestPractices_DistributedLocking.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Billing and Usage Reports",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-understanding-billing.html",
+          "children": null
+        },
+        {
+          "title": "Migrating a DynamoDB table from one account to another",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-migrating-table-between-accounts.html",
+          "children": [
+            {
+              "title": "Migrate a table using AWS Backup for cross-account backup and restore",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-migrating-table-between-accounts-backup.html",
+              "children": null
+            },
+            {
+              "title": "Migrate a table using export to S3 and import from S3",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-migrating-table-between-accounts-s3.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "DAX prescriptive guidance",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax-prescriptive-guidance.html",
+          "children": [
+            {
+              "title": "Evaluating the suitability of DAX",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/evaluate-dax-suitability.html",
+              "children": null
+            },
+            {
+              "title": "Configuring your DAX client",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax-config-dax-client.html",
+              "children": null
+            },
+            {
+              "title": "Configuring your DAX cluster",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax-config-considerations.html",
+              "children": null
+            },
+            {
+              "title": "Sizing your DAX cluster",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax-cluster-sizing.html",
+              "children": null
+            },
+            {
+              "title": "Deploying a cluster",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax-deploy-cluster.html",
+              "children": null
+            },
+            {
+              "title": "Cluster operations",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/dax-cluster-operations.html",
+              "children": null
+            },
+            {
+              "title": "Monitoring DAX",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/pres-guide-monitor-dax.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "PITR recovery",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-pitr-recovery.html",
+          "children": [
+            {
+              "title": "Recovery by initiating a table restore",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-pitr-recovery-table-restore.html",
+              "children": null
+            },
+            {
+              "title": "Recovery by rolling back unwanted writes in-place",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-pitr-recovery-inplace-rollback.html",
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Using DynamoDB with other AWS services",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/OtherServices.html",
+      "children": [
+        {
+          "title": "Integrating with Amazon Cognito",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Cognito.Credentials.html",
+          "children": null
+        },
+        {
+          "title": "Integrating with Amazon Redshift",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/RedshiftforDynamoDB.html",
+          "children": [
+            {
+              "title": "Cross-account integration considerations with CMK",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/cross-account-integration-considerations.html",
+              "children": null
+            },
+            {
+              "title": "Zero-ETL integration with Amazon Redshift",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/RedshiftforDynamoDB-zero-etl.html",
+              "children": [
+                {
+                  "title": "Creating DynamoDB zero-ETL integrations",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/RedshiftforDynamoDB-zero-etl-getting-started.html",
+                  "children": null
+                },
+                {
+                  "title": "Viewing DynamoDB zero-ETL integrations",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/RedshiftforDynamoDB-zero-etl-viewing.html",
+                  "children": null
+                },
+                {
+                  "title": "Deleting DynamoDB zero-ETL integrations",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/RedshiftforDynamoDB-zero-etl-deleting.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Loading data from DynamoDB into Amazon Redshift with COPY",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/RedshiftforDynamoDB-copy-data.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Integrating with Amazon EMR",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.html",
+          "children": [
+            {
+              "title": "Tutorial: Working with Amazon DynamoDB and Apache Hive",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.Tutorial.html",
+              "children": [
+                {
+                  "title": "Step 1: Create an Amazon EC2 key pair",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.Tutorial.EC2KeyPair.html",
+                  "children": null
+                },
+                {
+                  "title": "Step 2: Launch an Amazon EMR cluster",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.Tutorial.LaunchEMRCluster.html",
+                  "children": null
+                },
+                {
+                  "title": "Step 3: Connect to the Leader node",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.Tutorial.ConnectToLeaderNode.html",
+                  "children": null
+                },
+                {
+                  "title": "Step 4: Load data into HDFS",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.Tutorial.LoadDataIntoHDFS.html",
+                  "children": null
+                },
+                {
+                  "title": "Step 5: Copy data to DynamoDB",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.Tutorial.CopyDataToDDB.html",
+                  "children": null
+                },
+                {
+                  "title": "Step 6: Query the data in the DynamoDB table",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.Tutorial.QueryDataInDynamoDB.html",
+                  "children": null
+                },
+                {
+                  "title": "Step 7: (Optional) clean up",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.Tutorial.CleanUp.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Creating an external table in Hive",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.ExternalTableForDDB.html",
+              "children": null
+            },
+            {
+              "title": "Processing HiveQL statements",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.ProcessingHiveQL.html",
+              "children": null
+            },
+            {
+              "title": "Querying data in DynamoDB",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.Querying.html",
+              "children": null
+            },
+            {
+              "title": "Copying data to and from Amazon DynamoDB",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.CopyingData.html",
+              "children": [
+                {
+                  "title": "Copying data between DynamoDB and a native Hive table",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.CopyingData.NativeHive.html",
+                  "children": null
+                },
+                {
+                  "title": "Copying data between DynamoDB and Amazon S3",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.CopyingData.S3.html",
+                  "children": null
+                },
+                {
+                  "title": "Copying data between DynamoDB and HDFS",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.CopyingData.HDFS.html",
+                  "children": null
+                },
+                {
+                  "title": "Using data compression",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.CopyingData.Compression.html",
+                  "children": null
+                },
+                {
+                  "title": "Reading non-printable UTF-8 character data",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.CopyingData.NonPrintableData.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Performance tuning",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.PerformanceTuning.html",
+              "children": [
+                {
+                  "title": "DynamoDB provisioned throughput",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.PerformanceTuning.Throughput.html",
+                  "children": null
+                },
+                {
+                  "title": "Adjusting the mappers",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.PerformanceTuning.Mappers.html",
+                  "children": null
+                },
+                {
+                  "title": "Additional topics",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/EMRforDynamoDB.PerformanceTuning.Misc.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Integrating with S3",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3forDynamoDB.html",
+          "children": [
+            {
+              "title": "Import from Amazon S3",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3DataImport.HowItWorks.html",
+              "children": [
+                {
+                  "title": "Importing a table",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3DataImport.Requesting.html",
+                  "children": null
+                },
+                {
+                  "title": "Import formats",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3DataImport.Format.html",
+                  "children": null
+                },
+                {
+                  "title": "Quotas and Validation",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3DataImport.Validation.html",
+                  "children": null
+                },
+                {
+                  "title": "Best practices",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3DataImport.BestPractices.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Export to Amazon S3",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3DataExport.HowItWorks.html",
+              "children": [
+                {
+                  "title": "Requesting a table export",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3DataExport_Requesting.html",
+                  "children": null
+                },
+                {
+                  "title": "Export format",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3DataExport.Output.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Integrating with Amazon SageMaker Lakehouse",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/amazon-sagemaker-lakehouse-for-DynamoDB.html",
+          "children": [
+            {
+              "title": "Zero-ETL integration with Amazon SageMaker Lakehouse",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/amazon-sagemaker-lakehouse-for-DynamoDB-zero-etl.html",
+              "children": [
+                {
+                  "title": "Creating DynamoDB zero-ETL integrations",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/amazon-sagemaker-lakehouse-for-DynamoDB-zero-etl-getting-started.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Integrating with Amazon OpenSearch Service",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/OpenSearchIngestionForDynamoDB.html",
+          "children": [
+            {
+              "title": "Handling breaking changes",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/opensearch-for-dynamodb-change-index.html",
+              "children": null
+            },
+            {
+              "title": "Zero-ETL integration with OpenSearch Service",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-integration-opensearch.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Integrating with Amazon EventBridge",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/eventbridge-for-dynamodb.html",
+          "children": null
+        },
+        {
+          "title": "Integrating with Amazon MSK",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/msk-for-dynamodb.html",
+          "children": null
+        },
+        {
+          "title": "Integration best practices",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-integration.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Using agentic AI with DynamoDB",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ddb-ai-integration.html",
+      "children": [
+        {
+          "title": "AI framework connectors",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/gen-ai-framework-connectors.html",
+          "children": [
+            {
+              "title": "Strands Agents storage",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ddb-strands-storage.html",
+              "children": null
+            },
+            {
+              "title": "LangChain integrations",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ddb-langchain.html",
+              "children": null
+            },
+            {
+              "title": "LangGraph checkpoint store",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ddb-langgraph-checkpoint.html",
+              "children": null
+            },
+            {
+              "title": "LangGraph long-term memory",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ddb-langgraph-memory.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Leveraging DynamoDB Zero-ETL integration with OpenSearch Service",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ddb-and-amazon-bedrock.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "Quotas and constraints",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ServiceQuotasRevised.html",
+      "children": [
+        {
+          "title": "Requesting a quota increase",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/RequestingQuotaIncrease.html",
+          "children": null
+        },
+        {
+          "title": "Quotas",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ServiceQuotas.html",
+          "children": null
+        },
+        {
+          "title": "Constraints",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Constraints.html",
+          "children": null
+        }
+      ]
+    },
+    {
+      "title": "API reference",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/CurrentAPI.html",
+      "children": null
+    },
+    {
+      "title": "Troubleshooting",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Troubleshooting.html",
+      "children": [
+        {
+          "title": "Internal server errors",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TroubleshootingInternalServerErrors.html",
+          "children": null
+        },
+        {
+          "title": "Latency",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TroubleshootingLatency.html",
+          "children": null
+        },
+        {
+          "title": "Throttling",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TroubleshootingThrottling.html",
+          "children": [
+            {
+              "title": "Diagnosing throttling",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/throttling-diagnosing-workflow.html",
+              "children": null
+            },
+            {
+              "title": "Resolution guide",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/troubleshooting-throttling-diagnostics.html",
+              "children": [
+                {
+                  "title": "1- Key range throughput exceeded (hot partitions)",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/throttling-key-range-limit-exceeded-mitigation.html",
+                  "children": null
+                },
+                {
+                  "title": "2- Provisioned throughput exceeded",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/throttling-provisioned-capacity-exceeded-mitigation.html",
+                  "children": null
+                },
+                {
+                  "title": "3- Account limits exceeded",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/throttling-account-limit-exceeded-mitigation.html",
+                  "children": null
+                },
+                {
+                  "title": "4- On-demand maximum throughput exceeded",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/throttling-ondemand-capacity-exceeded-mitigation.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "GSI write throttling and back-pressure",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/gsi-throttling.html",
+              "children": null
+            },
+            {
+              "title": "CloudWatch throttling metrics",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TroubleshootingThrottling-cloudwatch.html",
+              "children": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Appendix",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Appendix.html",
+      "children": [
+        {
+          "title": "Troubleshooting SSL/TLS connection establishment issues with DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ats-certs.html",
+          "children": null
+        },
+        {
+          "title": "Example tables and data for use in DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AppendixSampleTables.html",
+          "children": null
+        },
+        {
+          "title": "Creating example tables and uploading data",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AppendixSampleDataCode.html",
+          "children": [
+            {
+              "title": "Creating example tables and uploading data - Java",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AppendixSampleDataCodeJava.html",
+              "children": null
+            },
+            {
+              "title": "Creating example tables and uploading data - .NET",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AppendixSampleDataCodeDotNET.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Example application using AWS SDK for Python (Boto3)",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TicTacToe.html",
+          "children": [
+            {
+              "title": "Step 1: Deploy and test locally",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TicTacToe.Phase1.html",
+              "children": null
+            },
+            {
+              "title": "Step 2: Examine the data model and implementation details",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TicTacToe.Phase2.html",
+              "children": null
+            },
+            {
+              "title": "Step 3: Deploy in production",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TicTacToe.Phase3.html",
+              "children": null
+            },
+            {
+              "title": "Step 4: Clean up resources",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TicTacToe.AppClosure.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Reserved words in DynamoDB",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ReservedWords.html",
+          "children": null
+        },
+        {
+          "title": "AWS SDK for Java 1.x examples",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Appendix.JavaSDKv1.html",
+          "children": [
+            {
+              "title": "DAX and Java SDK v1",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.java-sdk-v1.html",
+              "children": [
+                {
+                  "title": "TryDax.java",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-java.TryDax.html",
+                  "children": null
+                },
+                {
+                  "title": "TryDaxHelper.java",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-java.TryDaxHelper.html",
+                  "children": null
+                },
+                {
+                  "title": "TryDaxTests.java",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-java.TryDaxTests.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Modifying an existing SDK for Java 1.x application to use DAX",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.modify-your-app.java-sdk-v1.html",
+              "children": null
+            },
+            {
+              "title": "Querying global secondary indexes with SDK for Java 1.x",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.QueryGSI.java-sdk-v1.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "AWS SDK for Go 1.x examples",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Appendix.GoSDKv1.html",
+          "children": [
+            {
+              "title": "Go and DAX",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-go.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "AWS SDK for Node.js 2.x examples",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Appendix.SDKNodejsv2.html",
+          "children": [
+            {
+              "title": "Node.js and DAX",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-nodejs.html",
+              "children": [
+                {
+                  "title": "01-create-table.js",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-nodejs.01-create-table.html",
+                  "children": null
+                },
+                {
+                  "title": "02-write-data.js",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-nodejs.02-write-data.html",
+                  "children": null
+                },
+                {
+                  "title": "03-getitem-test.js",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-nodejs.03-getitem-test.html",
+                  "children": null
+                },
+                {
+                  "title": "04-query-test.js",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-nodejs.04-query-test.html",
+                  "children": null
+                },
+                {
+                  "title": "05-scan-test.js",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-nodejs.05-scan-test.html",
+                  "children": null
+                },
+                {
+                  "title": "06-delete-table.js",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.client.run-application-nodejs.06-delete-table.html",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Document history",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DocumentHistory.html",
+      "children": null
+    },
+    {
+      "title": "Legacy features",
+      "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyFeatures.html",
+      "children": [
+        {
+          "title": "Global tables version 2017.11.29 (Legacy)",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V1.html",
+          "children": [
+            {
+              "title": "How it works",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables_HowItWorks.html",
+              "children": null
+            },
+            {
+              "title": "Best Practices and Requirements",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables_reqs_bestpractices.html",
+              "children": null
+            },
+            {
+              "title": "Creating a global table (Version 2017.11.29)",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.tutorial.html",
+              "children": null
+            },
+            {
+              "title": "Monitoring global tables",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables_monitoring.html",
+              "children": null
+            },
+            {
+              "title": "Using IAM with global tables",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/gt_IAM.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Previous low-level DynamoDB API version (2011-12-05)",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Appendix.APIv20111205.html",
+          "children": [
+            {
+              "title": "BatchGetItem",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/API_BatchGetItem_v20111205.html",
+              "children": null
+            },
+            {
+              "title": "BatchWriteItem",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/API_BatchWriteItem_v20111205.html",
+              "children": null
+            },
+            {
+              "title": "CreateTable",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/API_CreateTable_v20111205.html",
+              "children": null
+            },
+            {
+              "title": "DeleteItem",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/API_DeleteItem_v20111205.html",
+              "children": null
+            },
+            {
+              "title": "DeleteTable",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/API_DeleteTable_v20111205.html",
+              "children": null
+            },
+            {
+              "title": "DescribeTables",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/API_DescribeTables_v20111205.html",
+              "children": null
+            },
+            {
+              "title": "GetItem",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/API_GetItem_v20111205.html",
+              "children": null
+            },
+            {
+              "title": "ListTables",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/API_ListTables_v20111205.html",
+              "children": null
+            },
+            {
+              "title": "PutItem",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/API_PutItem_v20111205.html",
+              "children": null
+            },
+            {
+              "title": "Query",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/API_Query_v20111205.html",
+              "children": null
+            },
+            {
+              "title": "Scan",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/API_Scan_v20111205.html",
+              "children": null
+            },
+            {
+              "title": "UpdateItem",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/API_UpdateItem_v20111205.html",
+              "children": null
+            },
+            {
+              "title": "UpdateTable",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/API_UpdateTable_v20111205.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Legacy DynamoDB conditional parameters",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.html",
+          "children": [
+            {
+              "title": "AttributesToGet",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.AttributesToGet.html",
+              "children": null
+            },
+            {
+              "title": "AttributeUpdates",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.AttributeUpdates.html",
+              "children": null
+            },
+            {
+              "title": "ConditionalOperator",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.ConditionalOperator.html",
+              "children": null
+            },
+            {
+              "title": "Expected",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.Expected.html",
+              "children": null
+            },
+            {
+              "title": "KeyConditions",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.KeyConditions.html",
+              "children": null
+            },
+            {
+              "title": "QueryFilter",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.QueryFilter.html",
+              "children": null
+            },
+            {
+              "title": "ScanFilter",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.ScanFilter.html",
+              "children": null
+            },
+            {
+              "title": "Writing conditions with legacy parameters",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/LegacyConditionalParameters.Conditions.html",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
