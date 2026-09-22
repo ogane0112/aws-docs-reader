@@ -24,7 +24,11 @@ jobs:
 
       - name: Commit changes if any
         run: |
-          if git diff --quiet -- public/data; then
+          # `git diff --quiet` only compares tracked files, so it misses the
+          # very first run (public/data doesn't exist in git yet, so
+          # everything gentoc writes is untracked). `git status --porcelain`
+          # catches both untracked and modified files.
+          if [ -z "$(git status --porcelain -- public/data)" ]; then
             echo "No changes to public/data"
             exit 0
           fi
