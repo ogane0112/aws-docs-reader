@@ -94,19 +94,17 @@ go run ./cmd/gentoc -config guides.config.yaml -out public/data
 
 - `internal/gentoc/parser_tocjson.go` は、いくつかの想定されるJSON形状（配列直下 / `contents`等のキーで
   ラップされたオブジェクト、`title`/`label`/`name` 等の複数のキー名候補）を許容する**ヒューリスティックな
-  パーサ**として実装した。実データでの動作は保証されない。
+  パーサ**として実装した。
 - `internal/gentoc/parser_sitemap.go` の方は `sitemap.xml`（sitemaps.org標準規格）を素直にパースするだけなので、
   形式面のリスクはない。ただしsitemapには章立て・順序の保証がないため、フォールバック時のページ順は
   URLの辞書順になり、公式の目次順とは一致しない点に注意（要件書3.1「並び順は公式の目次順」を厳密には満たせない）。
 
-**次にネットワークアクセスがある環境で必ずやること:**
-
-1. `curl https://docs.aws.amazon.com/AmazonECS/latest/developerguide/toc-contents.json` 等で実データを1件取得する
-2. 取得したJSONを `internal/gentoc/testdata/` にfixtureとして保存する
-3. 実際のキー名・ネスト構造に合わせて `parser_tocjson.go` のキー名候補（`titleKeys` / `hrefKeys` / `childrenKeys`）を調整し、
-   そのfixtureを使ったテストを追加する
-4. `go run ./cmd/gentoc` を実際のガイド（ECS/DynamoDB/Aurora）に対して実行し、生成された `public/data/toc/*.json` の
-   ページ数・順序が公式サイトの目次と一致するか目視確認する
+**✅ 2026-09-22 検証済み:** GitHub Actions上（このリポジトリの `generate-toc.yml`、ネットワーク制限のない
+GitHub-hostedランナー）で実際のAWS公式サイトに対して実行し、3ガイドすべて `toc-contents.json` 経由で取得に
+成功した（ECS: 571ページ、DynamoDB: 676ページ、Aurora: 969ページ）。sitemap.xmlへのフォールバックは未検証のまま
+（フォールバックが発動する状況＝`toc-contents.json`が無い/壊れているガイドにまだ遭遇していないため）。
+`public/data/toc/*.json` の実際のページ数・順序が公式サイトの目次と一致するかの目視確認は未実施なので、
+余裕があれば一度確認することを推奨する。
 
 ## テスト
 
@@ -125,8 +123,12 @@ UIやIndexedDB/Gist連携は含まない（それらはブラウザでの手動�
 
 - `.github/workflows/generate-toc.yml`: 毎週月曜（JST 9時）に `gentoc` を実行し、`public/data` に差分があれば
   自動コミットする（要件書6章のとおり）。
-- `.github/workflows/deploy.yml`: `main`へのpush時に `npm run build` してGitHub Pagesへデプロイする。
+- `.github/workflows/deploy.yml`: `npm run build` してGitHub Pagesへデプロイする。
   リポジトリの Settings → Pages → Source を「GitHub Actions」に設定する必要がある。
+  トリガーは3種類: 直接`main`へのpush、手動実行(`workflow_dispatch`)、そして`generate-toc.yml`の完了
+  (`workflow_run`)。`generate-toc.yml`のコミットは**デフォルトの`GITHUB_TOKEN`で行っているため、GitHub Actionsの
+  再帰起動防止の仕様により`push`トリガーを起動しない**。これに気づかず`workflow_run`トリガーを足す前は、
+  毎週の目次自動更新がコミットはされてもPagesに反映されない状態になっていた（2026-09-22に発見・修正）。
 
 ## 未実装・既知の制約
 

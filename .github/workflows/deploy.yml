@@ -3,6 +3,15 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Pushes made by generate-toc.yml use the default GITHUB_TOKEN, and
+  # GitHub Actions does not let those trigger other workflows' `push`
+  # events (anti-recursion protection). Without this, the weekly TOC
+  # regeneration (requirements.md 6章) would commit new data that never
+  # gets deployed. workflow_run picks up right after that workflow
+  # finishes instead.
+  workflow_run:
+    workflows: ["Generate TOC"]
+    types: [completed]
   workflow_dispatch: {}
 
 permissions:
@@ -16,9 +25,16 @@ concurrency:
 
 jobs:
   build:
+    # Only build for a direct push, a manual dispatch, or a Generate TOC
+    # run that actually succeeded (skip on its failure).
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # For workflow_run, github.sha is deploy.yml's own ref, not the
+          # commit Generate TOC just pushed — check that commit out explicitly.
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
 
       - uses: actions/setup-node@v4
         with:
