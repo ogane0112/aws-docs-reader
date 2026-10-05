@@ -1532,6 +1532,11 @@
                           "title": "Service Connect resources for Amazon ECS blue/green, linear, and canary deployments",
                           "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect-blue-green.html",
                           "children": null
+                        },
+                        {
+                          "title": "VPC Lattice resources for blue/green, linear, and canary deployments",
+                          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/vpc-lattice-resources-for-blue-green.html",
+                          "children": null
                         }
                       ]
                     },

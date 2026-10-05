@@ -5,8 +5,8 @@
     "title": "開発者ガイド",
     "baseUrl": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/",
     "priority": 1,
-    "pageCount": 571,
-    "generatedAt": "2026-09-28T03:42:53.302077463Z"
+    "pageCount": 572,
+    "generatedAt": "2026-10-05T04:06:44.905710183Z"
   },
   {
     "id": "dynamodb-dev",
@@ -14,8 +14,8 @@
     "title": "開発者ガイド",
     "baseUrl": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/",
     "priority": 2,
-    "pageCount": 676,
-    "generatedAt": "2026-09-28T03:42:53.302077463Z"
+    "pageCount": 677,
+    "generatedAt": "2026-10-05T04:06:44.905710183Z"
   },
   {
     "id": "aurora-ug",
@@ -23,7 +23,7 @@
     "title": "ユーザーガイド",
     "baseUrl": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/",
     "priority": 3,
-    "pageCount": 969,
-    "generatedAt": "2026-09-28T03:42:53.302077463Z"
+    "pageCount": 994,
+    "generatedAt": "2026-10-05T04:06:44.905710183Z"
   }
 ]

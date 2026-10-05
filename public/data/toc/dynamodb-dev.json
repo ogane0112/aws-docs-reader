@@ -3026,6 +3026,11 @@
                   "children": null
                 },
                 {
+                  "title": "Filtering a table export",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3DataExport.Filtered.html",
+                  "children": null
+                },
+                {
                   "title": "Export format",
                   "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/S3DataExport.Output.html",
                   "children": null

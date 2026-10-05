@@ -2403,11 +2403,6 @@
                   "children": null
                 },
                 {
-                  "title": "Escape identifiers",
-                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.Security.DynamicMasking.EscapeIdentifiers.html",
-                  "children": null
-                },
-                {
                   "title": "Data masking functions",
                   "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.Security.DynamicMasking.PredefinedMaskingFunctions.html",
                   "children": null
@@ -2515,6 +2510,132 @@
             {
               "title": "Using shared plan cache",
               "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/apg-shared-plan-cache.html",
+              "children": null
+            }
+          ]
+        },
+        {
+          "title": "Querying Iceberg and Parquet data",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/query-iceberg-and-parquet-data.html",
+          "children": [
+            {
+              "title": "How it works",
+              "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-how-it-works.html",
+              "children": null
+            },
+            {
+              "title": "Getting started",
+              "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-getting-started.html",
+              "children": [
+                {
+                  "title": "Prerequisites",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-prerequisites.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Working with foreign tables",
+              "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-foreign-tables.html",
+              "children": [
+                {
+                  "title": "Type mapping",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-type-mapping.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Resource management",
+              "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-resource-management.html",
+              "children": null
+            },
+            {
+              "title": "Best practices",
+              "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-best-practices.html",
+              "children": [
+                {
+                  "title": "Choosing the right DB instance class",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-instance-class.html",
+                  "children": null
+                },
+                {
+                  "title": "Using a dedicated reader instance for analytics",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-dedicated-reader.html",
+                  "children": null
+                },
+                {
+                  "title": "Tuning query_mem for your workload",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-tuning-query-mem.html",
+                  "children": null
+                },
+                {
+                  "title": "Concurrency sizing",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-concurrency-sizing.html",
+                  "children": null
+                },
+                {
+                  "title": "Optimizing data layout in Amazon S3",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-data-layout.html",
+                  "children": null
+                },
+                {
+                  "title": "IAM and networking recommendations",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-iam-networking.html",
+                  "children": null
+                },
+                {
+                  "title": "Operational best practices",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-operational.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Monitoring and troubleshooting",
+              "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-monitoring-troubleshooting.html",
+              "children": [
+                {
+                  "title": "Execution plan",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-execution-plan.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Using foreign tables with Aurora Global Database",
+              "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-global-database.html",
+              "children": null
+            },
+            {
+              "title": "Limitations",
+              "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-limitations.html",
+              "children": null
+            },
+            {
+              "title": "Technical reference",
+              "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-reference.html",
+              "children": [
+                {
+                  "title": "Configuration parameters",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-configuration-parameters.html",
+                  "children": null
+                },
+                {
+                  "title": "IAM policies reference",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-iam-policies-reference.html",
+                  "children": null
+                },
+                {
+                  "title": "SQL functions reference",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-sql-functions-reference.html",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "title": "Tutorial: Querying Amazon S3 data",
+              "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-tutorial.html",
               "children": null
             }
           ]
@@ -2810,6 +2931,11 @@
                       "title": "Using T-SQL query hints to improve Babelfish query performance",
                       "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-tsql-hints.html",
                       "children": null
+                    },
+                    {
+                      "title": "Using ANTLR parse cache",
+                      "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-procedure-parse-cache.html",
+                      "children": null
                     }
                   ]
                 },
@@ -2836,6 +2962,11 @@
                 {
                   "title": "Understanding partitioning in Babelfish",
                   "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-partition.html",
+                  "children": null
+                },
+                {
+                  "title": "Temporary tables on read replicas",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-temp-tables-read-replicas.html",
                   "children": null
                 }
               ]
