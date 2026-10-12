@@ -3672,6 +3672,11 @@
                   "children": null
                 }
               ]
+            },
+            {
+              "title": "rds_tools functions reference",
+              "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/PostgreSQL_rds_tools-functions-reference.html",
+              "children": null
             }
           ]
         },
@@ -4647,6 +4652,11 @@
         {
           "title": "Limitations",
           "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-api.limitations.html",
+          "children": null
+        },
+        {
+          "title": "Session management",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/data-api.session-management.html",
           "children": null
         },
         {
