@@ -1059,6 +1059,11 @@
                   "children": null
                 },
                 {
+                  "title": "Using the DynamoDB Streams Kinesis Adapter to read records from a timestamp",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.Timestamp.html",
+                  "children": null
+                },
+                {
                   "title": "DynamoDB Streams and AWS Lambda triggers",
                   "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.Lambda.html",
                   "children": [

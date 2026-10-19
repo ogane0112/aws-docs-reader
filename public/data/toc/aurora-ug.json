@@ -2580,6 +2580,11 @@
                   "children": null
                 },
                 {
+                  "title": "Joining foreign tables with local tables",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-local-table-casts.html",
+                  "children": null
+                },
+                {
                   "title": "IAM and networking recommendations",
                   "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-iam-networking.html",
                   "children": null
@@ -2595,6 +2600,16 @@
               "title": "Monitoring and troubleshooting",
               "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-monitoring-troubleshooting.html",
               "children": [
+                {
+                  "title": "Monitoring",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-monitoring.html",
+                  "children": null
+                },
+                {
+                  "title": "Troubleshooting",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-troubleshooting.html",
+                  "children": null
+                },
                 {
                   "title": "Execution plan",
                   "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-analytics-execution-plan.html",
