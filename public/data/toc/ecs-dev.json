@@ -515,6 +515,32 @@
       ]
     },
     {
+      "title": "Amazon ECS Gateway",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/gateway-overview.html",
+      "children": [
+        {
+          "title": "Create and manage a gateway",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/gateway-managing.html",
+          "children": null
+        },
+        {
+          "title": "Connect services to a gateway",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/gateway-connect-service.html",
+          "children": null
+        },
+        {
+          "title": "Monitor a gateway",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/gateway-monitoring.html",
+          "children": null
+        },
+        {
+          "title": "Troubleshoot a gateway",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/gateway-troubleshooting.html",
+          "children": null
+        }
+      ]
+    },
+    {
       "title": "Task definitions",
       "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html",
       "children": [

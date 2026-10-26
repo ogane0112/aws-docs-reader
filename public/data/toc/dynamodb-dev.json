@@ -547,6 +547,11 @@
               ]
             },
             {
+              "title": "Disassociating a replica",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables-disassociate.html",
+              "children": null
+            },
+            {
               "title": "Global tables billing",
               "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/global-tables-billing.html",
               "children": null

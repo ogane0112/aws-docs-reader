@@ -1953,6 +1953,11 @@
                   "children": null
                 },
                 {
+                  "title": "Using GTID tags",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/mysql-replication-gtid.tags.html",
+                  "children": null
+                },
+                {
                   "title": "Disabling GTID-based replication",
                   "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/mysql-replication-gtid.disabling.html",
                   "children": null
@@ -4564,6 +4569,47 @@
       ]
     },
     {
+      "title": "On-Demand Capacity Reservations",
+      "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/capacity-reservations.html",
+      "children": [
+        {
+          "title": "Getting started with On-Demand Capacity Reservations",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/capacity-reservations.getting-started.html",
+          "children": null
+        },
+        {
+          "title": "Capacity Reservation pricing and billing",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/capacity-reservations.pricing-billing.html",
+          "children": null
+        },
+        {
+          "title": "Creating a Capacity Reservation",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/capacity-reservations.creating.html",
+          "children": null
+        },
+        {
+          "title": "Viewing and modifying your Capacity Reservations",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/capacity-reservations.viewing-modifying.html",
+          "children": null
+        },
+        {
+          "title": "Canceling a Capacity Reservation",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/capacity-reservations.canceling.html",
+          "children": null
+        },
+        {
+          "title": "Using a Capacity Reservation with an Aurora DB instance",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/capacity-reservations.using.html",
+          "children": null
+        },
+        {
+          "title": "Stopping and starting a DB cluster in a reservation",
+          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/capacity-reservations.stopstart.html",
+          "children": null
+        }
+      ]
+    },
+    {
       "title": "Zero-ETL integrations",
       "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/zero-etl.html",
       "children": [
@@ -5154,6 +5200,11 @@
     {
       "title": "Quotas and constraints",
       "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_Limits.html",
+      "children": null
+    },
+    {
+      "title": "API request throttling",
+      "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/rds-api-throttling.html",
       "children": null
     },
     {
