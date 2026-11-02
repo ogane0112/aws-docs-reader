@@ -817,6 +817,11 @@
                   "title": "Specifying GPUs in a task definition",
                   "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu-specifying.html",
                   "children": null
+                },
+                {
+                  "title": "Share GPUs on Amazon ECS",
+                  "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-gpu-sharing.html",
+                  "children": null
                 }
               ]
             },
@@ -1907,6 +1912,11 @@
                           "children": null
                         }
                       ]
+                    },
+                    {
+                      "title": "Service Connect proxy container",
+                      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/configure-service-connect-proxy-container.html",
+                      "children": null
                     },
                     {
                       "title": "Configuring Service Connect with the AWS CLI",
