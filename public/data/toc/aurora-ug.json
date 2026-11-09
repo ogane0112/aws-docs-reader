@@ -3398,6 +3398,11 @@
                   "children": null
                 },
                 {
+                  "title": "Upgrading the extension",
+                  "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PostgreSQL.S3Import.UpgradeExtension.html",
+                  "children": null
+                },
+                {
                   "title": "Overview of importing data from Amazon S3",
                   "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_PostgreSQL.S3Import.Overview.html",
                   "children": null
@@ -4133,6 +4138,11 @@
               "children": null
             },
             {
+              "title": "Instance monitoring",
+              "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitless-instance-monitoring.html",
+              "children": null
+            },
+            {
               "title": "Monitoring Limitless Database with Database Insights",
               "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitless-monitoring.cwdbi.html",
               "children": [
@@ -4218,11 +4228,6 @@
               "children": null
             }
           ]
-        },
-        {
-          "title": "Instance monitoring",
-          "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/limitless-instance-monitoring.html",
-          "children": null
         },
         {
           "title": "Backing up and restoring Limitless Database",

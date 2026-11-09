@@ -813,6 +813,42 @@
           ]
         },
         {
+          "title": "Working with bulk put items",
+          "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BulkPutItems.HowItWorks.html",
+          "children": [
+            {
+              "title": "Performance tiers",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BulkPutItems.Tiers.html",
+              "children": null
+            },
+            {
+              "title": "Input formats",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BulkPutItems.Format.html",
+              "children": null
+            },
+            {
+              "title": "Running a bulk put items operation",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BulkPutItems.Requesting.html",
+              "children": null
+            },
+            {
+              "title": "Output and reconciliation",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BulkPutItems.Output.html",
+              "children": null
+            },
+            {
+              "title": "Considerations and quotas",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BulkPutItems.Considerations.html",
+              "children": null
+            },
+            {
+              "title": "Best practices",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/BulkPutItems.BestPractices.html",
+              "children": null
+            }
+          ]
+        },
+        {
           "title": "Working with secondary indexes",
           "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html",
           "children": [

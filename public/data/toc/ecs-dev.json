@@ -306,6 +306,47 @@
       ]
     },
     {
+      "title": "Isolated and confidential tasks",
+      "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/isolated-confidential-tasks.html",
+      "children": [
+        {
+          "title": "Overview",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ict-overview.html",
+          "children": null
+        },
+        {
+          "title": "Getting started",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ict-getting-started.html",
+          "children": null
+        },
+        {
+          "title": "Security model",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ict-security-model.html",
+          "children": null
+        },
+        {
+          "title": "Getting the CLI tools",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ict-get-cli-tools.html",
+          "children": null
+        },
+        {
+          "title": "Encrypted container images",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ict-encrypted-container-images.html",
+          "children": null
+        },
+        {
+          "title": "Confidential policy configuration",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ict-confidential-policy-configuration.html",
+          "children": null
+        },
+        {
+          "title": "Considerations and limitations",
+          "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ict-considerations-and-limitations.html",
+          "children": null
+        }
+      ]
+    },
+    {
       "title": "Amazon ECS Managed Daemons",
       "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/managed-daemons.html",
       "children": [
