@@ -817,7 +817,7 @@
           "children": null
         },
         {
-          "title": "Using Amazon Q Developer to provide task definition recommendations in the Amazon ECS console",
+          "title": "Using AWS assistant to provide task definition recommendations in the Amazon ECS console",
           "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/using-amazon-q.html",
           "children": null
         },
@@ -2749,7 +2749,7 @@
           "children": null
         },
         {
-          "title": "Troubleshooting with Amazon Q Developer",
+          "title": "Troubleshooting with AWS assistant",
           "url": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/troubleshooting-with-Q.html",
           "children": null
         }
