@@ -30,6 +30,32 @@
               "children": null
             },
             {
+              "title": "Setting up ExtendDB",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ExtendDB.html",
+              "children": [
+                {
+                  "title": "Starting",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ExtendDB.Starting.html",
+                  "children": null
+                },
+                {
+                  "title": "Signing requests",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ExtendDB.Credentials.html",
+                  "children": null
+                },
+                {
+                  "title": "Connecting",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ExtendDB.Endpoint.html",
+                  "children": null
+                },
+                {
+                  "title": "Behavior differences",
+                  "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ExtendDB.Differences.html",
+                  "children": null
+                }
+              ]
+            },
+            {
               "title": "Setting up DynamoDB local (downloadable version)",
               "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html",
               "children": [
@@ -948,6 +974,11 @@
             {
               "title": "Creating and searching vector indexes",
               "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/VectorSearchWorkingWith.html",
+              "children": null
+            },
+            {
+              "title": "Filter reference",
+              "url": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/VectorSearchFilterReference.html",
               "children": null
             },
             {

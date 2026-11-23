@@ -1390,6 +1390,11 @@
               "children": null
             },
             {
+              "title": "Planning log file storage",
+              "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/USER_LogAccess.Aurora.LogStorage.html",
+              "children": null
+            },
+            {
               "title": "Reading log file contents using REST",
               "url": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/DownloadCompleteDBLogFile.html",
               "children": null
